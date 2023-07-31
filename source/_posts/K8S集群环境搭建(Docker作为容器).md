@@ -1,5 +1,6 @@
 ---
 title: K8S集群环境搭建(Docker作为容器)
+date: 2023-03-12 16:00:00
 ---
 
 #### 参考：https://zhuanlan.zhihu.com/p/558014199?utm_id=0

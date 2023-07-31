@@ -7,35 +7,40 @@ nav:
   display_title: true
   fixed: false # fixed navigation bar
 
-# Menu 目錄
+# Menu 目錄(导航菜单)
 menu:
-# Home: / || fas fa-home
-# Archives: /archives/ || fas fa-archive
-# Tags: /tags/ || fas fa-tags
-# Categories: /categories/ || fas fa-folder-open
-# List||fas fa-list:
-#   Music: /music/ || fas fa-music
-#   Movie: /movies/ || fas fa-video
-# Link: /link/ || fas fa-link
-# About: /about/ || fas fa-heart
+  主页: / || fas fa-home
+  Archives: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  链接||fas fa-list:
+    友情链接: /link/ || fas fa-link
+    关于: /about/ || fas fa-heart
 
-# Code Blocks (代碼相關)
+
+# 移动端隐藏侧边栏
+hide_sidebar_menu_child: false
+
+
+# Code Blocks (代码块配置)
 # --------------------------------------
 
-highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: mac light #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
 highlight_height_limit: false # unit: px
 code_word_wrap: false
 
+
 # Social Settings (社交圖標設置)
 # formal:
 #   icon: link || the description || color
+#   書寫格式 圖標名：url || 描述性文字 || color
 social:
-# fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-# fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
-
+ fab fa-github: https://github.com/binwenwu || Github || '#24292e'
+ fas fa-envelope: mailto:binwenwu598@gmail.com || Email || '#4a7dbe'
+ fa-brands fa-qq: mailto:2390726421@gq.com || Email || '#24292e'
 # Image (圖片設置)
 # --------------------------------------
 
@@ -47,17 +52,17 @@ avatar:
   img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
   effect: false
 
-# Disable all banner image
+# 不显示顶部图
 disable_top_img: false
 
 # The banner image of home page
-index_img:
+index_img: "./source/img/bg01.png"
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: "./source/img/bg01.png"
 
 # The banner image of archive page
-archive_img:
+archive_img: "./source/img/bg01.png"
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
@@ -120,7 +125,7 @@ post_meta:
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
+  method: 2
   length: 500 # if you set method to 2 or 3, the length need to config
 
 # anchor
