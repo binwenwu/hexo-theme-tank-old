@@ -5,10 +5,10 @@
 # Site 基本信息配置
 title: 贪肯奇
 subtitle: '这是一只可爱的塔姆'
-description: '贪肯奇的博客，欢迎访问'
+description: ''
 # 关键字, 供搜索引擎检索
 keywords: 博客, 贪肯奇
-author: Binwen Wu
+author: 贪肯奇
 language: zh-CN
 timezone: ''
 
