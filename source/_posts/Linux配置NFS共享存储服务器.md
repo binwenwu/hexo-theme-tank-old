@@ -1,6 +1,7 @@
 ---
 title: Linux配置NFS共享存储服务器
-date: 2023-03-13 16:00:00
+date: 2023-04-03 20:10:50
+cover: https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true
 ---
 
 1. 安装 nfs-untils

@@ -56,17 +56,17 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://file.crazywong.com/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg
+index_img: https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://file.crazywong.com/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg
+default_top_img: https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true
 
 # The banner image of archive page
-archive_img: https://file.crazywong.com/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg
+archive_img: https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img:
+tag_img: https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true
 
 # The banner image of tag page
 # format:
@@ -92,7 +92,16 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-  # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    - https://file.crazywong.com/gh/jerryc127/CDN@latest/cover/default_bg.png
+    - https://file.crazywong.com/gh/jerryc127/CDN@latest/cover/default_bg2.png
+    - https://file.crazywong.com/gh/jerryc127/CDN@latest/cover/default_bg3.png
+
+
+
+作者: Jerry
+連結: https://butterfly.js.org/posts/4aa8abbe/#%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2
+來源: Butterfly
+  著作權歸作者所有。商業轉載請聯絡作者獲得授權，非商業轉載請註明出處。
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -161,21 +170,21 @@ toc:
 
 post_copyright:
   enable: true
-  decode: false
+  decode: true
   author_href:
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 # Sponsor/reward
 reward:
-  enable: false
+  enable: true
   QR_code:
-  # - img: /img/wechat.jpg
-  #   link:
-  #   text: wechat
-  # - img: /img/alipay.jpg
-  #   link:
-  #   text: alipay
+   - img: /img/wechat.jpg
+     link:
+     text: wechat
+   - img: /img/alipay.jpg
+     link:
+     text: alipay
 
 # Post edit
 # Easily browse and edit blog source code online.

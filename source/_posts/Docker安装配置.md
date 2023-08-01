@@ -1,6 +1,7 @@
 ---
 title: Docker安装配置
-date: 2023-03-11 16:00:00
+date: 2023-05-11 9:20:52
+cover: https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true
 ---
 
 ## 1.  安装Docker
