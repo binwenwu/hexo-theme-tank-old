@@ -4,15 +4,15 @@ date: 2023-05-18 14:08:12
 cover: https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true
 ---
 
-#### 参考：https://zhuanlan.zhihu.com/p/558014199?utm_id=0
+本文参考：https://zhuanlan.zhihu.com/p/558014199?utm_id=0
 
 ## 1.  安装Docker
 
-## 1.1  安装docker 20.10.7
+### 1.1  安装docker 20.10.7
 
-==注意 Docker 版本，要和 Kubernetes 版本 有对应关系==
+**注意 Docker 版本，要和 Kubernetes 版本 有对应关系**
 
-#### 三台机器上执行
+- 三台机器上执行
 
 ```shell
 # 安装/更新 yum-utils
@@ -37,9 +37,9 @@ systemctl enable docker
 docker version
 ```
 
-## 1.1  **配置加速镜像**
+### 1.2  配置加速镜像
 
-#### 三台机器上执行
+- 三台机器上执行
 
 ```shell
 sudo mkdir -p /etc/docker
@@ -65,19 +65,15 @@ docker info
 
 
 
-------
+## 2.  安装Kubernetes
+
+- 每台机器2GB或者更多的RAM(如果少于这个数字 将会影响应用的运行内存)
+- CPU2核以上
+- 集群中所有的服务器的网络彼此可以相互连接。
 
 
 
-## 2.  安装Kubernets
-
-==每台机器 2GB 或者 更多的 RAM（如果少于这个数字 将会影响应用的运行内存）
-CPU 2核 以上
-集群中 所有的服务器 的网络 彼此可以相互连接。==
-
-
-
-# <font color='darkred'>!!!!!!!!!!!!!!!!!!!!!!!!关闭防火墙!!!!!!!!!!!!!!!!!!!!!!!!!!!</font>
+关闭防火墙
 
 ````shell
 systemctl stop firewalld NetworkManager
@@ -105,9 +101,8 @@ bash
 
 ### 2.2  关闭交换区
 
-#### 三台机器上执行
-
-==下面是一些安全设置==
+- 三台机器上执行
+- 下面是一些安全设置
 
 ```shell
 # 查看 交换分区
@@ -140,7 +135,7 @@ sysctl --system
 
 ==安装 kubelet、kebeadm、kubectl；注意版本 （1.20.9）==
 
-#### 三台机器上执行
+- 三台机器上执行
 
 ```shell
 # 配置 k8s 的 yum 源地址
@@ -172,7 +167,7 @@ systemctl status kubelet
 
 ### 2.4   使用kubeadm引导集群
 
-==下载各个机器需要的镜像,三台机器都要安装==
+- 下载各个机器需要的镜像,三台机器都要安装
 
 ```shell
 # 配置镜像，生成 images.sh
@@ -196,7 +191,7 @@ EOF
 chmod +x ./images.sh && ./images.sh
 ```
 
-#### 使用`docker images` 查看
+- 使用`docker images` 查看
 
 ![image-20230406144630834](K8S集群环境搭建(Docker作为容器).assets/image-20230406144630834.png)
 
@@ -204,7 +199,7 @@ chmod +x ./images.sh && ./images.sh
 
 ### 2.5  初始化主节点，即把看 k8s-master 变为主节点
 
-#### 三台机器上执行
+- 三台机器上执行
 
 ```shell
 # 所有机器添加 master 域名映射，以下 IP 为 master 的 IP；
@@ -212,7 +207,7 @@ chmod +x ./images.sh && ./images.sh
 echo "192.168.1.135  k8s-master" >> /etc/hosts
 ```
 
-### master节点上执行
+- master节点上执行
 
 ```shell
 # 主节点初始化 （只在 master 服务器执行， 其他 node 不用）
@@ -228,7 +223,7 @@ kubeadm init \
 --pod-network-cidr=192.168.0.0/16
 ```
 
-#### 出现这个即成功了
+- 出现这个即成功了
 
 ![image-20230406145652752](K8S集群环境搭建(Docker作为容器).assets/image-20230406145652752.png)
 
@@ -236,7 +231,7 @@ kubeadm init \
 
 ### 2.5  根据提示继续
 
-#### ==master成功后提示==
+- master成功后提示
 
 ```shell
 Your Kubernetes control-plane has initialized successfully!
@@ -270,9 +265,9 @@ kubeadm join k8s-master:6443 --token is7ewi.nznlk1wdhsaocmp1 \
 
 
 
-#### To start using your cluster, you need to run the following as a regular user:
+To start using your cluster, you need to run the following as a regular user:
 
-#### 要开始使用集群，您需要以普通用户身份运行以下命令(<font color='red'>master节点执行</font>）：源自提示5~7
+要开始使用集群，您需要以普通用户身份运行以下命令(<font color='red'>master节点执行</font>）：源自上面的提示
 
 ```shell
 mkdir -p $HOME/.kube
@@ -286,7 +281,7 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 <font color='red'>注：只在 master 服务执行。其他 node 服务器 不用。</font>
 
-#### 在master上执行
+- 在master上执行
 
 ```shell
 # 下载 calico.yaml
@@ -296,23 +291,18 @@ curl https://docs.projectcalico.org/manifests/calico.yaml -O
 kubectl apply -f calico.yaml
 ```
 
-#### ==或者（这个更不会出错）==
+- 或者（这个更不会出错）
 
 ```shell
 kubectl apply -f https://docs.projectcalico.org/v3.18/manifests/calico.yaml
 ```
 
-#### 下载完成后生成calico.yaml
+- 下载完成后生成calico.yaml
 
 ![image-20230406150214816](K8S集群环境搭建(Docker作为容器).assets/image-20230406150214816.png)
 
 
-
-------
-
-
-
-==或者安装flannel==
+- 或者安装flannel
 
 ```shell
 kubectl apply -f https://github.com/flannel-io/flannel/releases/latest/download/kube-flannel.yml
@@ -320,12 +310,7 @@ kubectl apply -f https://github.com/flannel-io/flannel/releases/latest/download/
 
 
 
-------
-
-
-
-### <font color='red'>注意</font>
-
+<font color='red'>注意</font>
 ```shell
 如果修改了 初始化主节点中的
 --pod-network-cidr=192.168.0.0/16
@@ -336,18 +321,16 @@ kubectl apply -f https://github.com/flannel-io/flannel/releases/latest/download/
 
 ### 2.7  **Worker 加入集群 ★**
 
-#### workder节点加入到集群中（源自提示26~27）
+- worker节点加入到集群中（源自提示）
 
 ```shell
 kubeadm join k8s-master:6443 --token is7ewi.nznlk1wdhsaocmp1 \
     --discovery-token-ca-cert-hash sha256:b2795fca75bab316c566e98a619a3ce9b18c418e978c7b8fa9c48ff4143fd3c5
 ```
 
-==出现这个即成功==
+- 出现这个即成功
 
 ![image-20230406153948047](K8S集群环境搭建(Docker作为容器).assets/image-20230406153948047.png)
-
-
 
 
 
@@ -357,7 +340,7 @@ kubeadm join k8s-master:6443 --token is7ewi.nznlk1wdhsaocmp1 \
 
 ### 2.9  令牌过期
 
-==在master主节点执行==
+- 在master主节点执行
 
 ```shell
 # 重新获取令牌
@@ -368,19 +351,14 @@ kubeadm token create --print-join-command
 
 ### 2.10  部署Dashboard
 
-### 相关教程：
-
-[kubernetes(k8s)部署Dashboard - 干货分享 - 代码森林 (codeforest.cn)](http://www.codeforest.cn/article/570)
-
----
-
+- 参考链接: [kubernetes(k8s)部署Dashboard - 干货分享 - 代码森林 (codeforest.cn)](http://www.codeforest.cn/article/570)
 
 
 #### 2.10.1  运行pod（创建资源）
 
-部署 dashboard（可视化页面），[kubernetes 官方提供的可视化界面](https://github.com/kubernetes/dashboard)
+部署 dashboard（可视化页面）, [kubernetes 官方提供的可视化界面](https://github.com/kubernetes/dashboard)
 
-==在master上执行，推荐下载到本地导入虚拟机==
+- 在master上执行，推荐下载到本地导入虚拟机
 
 ```shell
 # 根据 在线配置文件 创建资源
@@ -398,7 +376,6 @@ kubectl apply -f recommended.yaml
 # 修改配置文件 找到 type，将 ClusterIP 改成 NodePort
 kubectl edit svc kubernetes-dashboard -n kubernetes-dashboard
 
-
 # 找到端口，在安全组放行
 kubectl get svc -A |grep kubernetes-dashboard
 ```
@@ -407,53 +384,37 @@ kubectl get svc -A |grep kubernetes-dashboard
 
 ![image-20230406161329065](K8S集群环境搭建(Docker作为容器).assets/image-20230406161329065.png)
 
-==32499即为访问端口，以后只需要使用任一节点的ip+32499即可访问==
+32499即为访问端口，以后只需要使用任一节点的ip+32499即可访问
 
 [https://192.168.1.135:32499](https://192.168.1.135:32499/) （要注意是 https，port 是映射的端口，在配置文件查看）
 
-
-
----
-
----
-
----
-
-==删除现有的dashboard服务==
+## 3 疑难杂症
+### 3.1 删除现有的dashboard服务
 
 ```shell
 kubectl delete service kubernetes-dashboard --namespace=kubernetes-dashboard
 ```
 
-==根据yaml来删除==
+- 根据yaml来删除
 
 ```shell
 kubectl delete -f recommended.yaml 
 ```
 
-
-
-若资源下载不下来，则直接本地导入recommended.yaml  ，下载地址如下
+- 若资源下载不下来，则直接本地导入recommended.yaml  ，下载地址如下
 
 https://raw.githubusercontent.com/kubernetes/dashboard/v2.3.1/aio/deploy/recommended.yaml
 
-执行：
+- 执行:
 
 ```shell
 kubectl apply -f recommended.yaml
 ```
 
 
+### 3.2 dashboard启动失败（无法访问）
 
-kubectl apply –f  https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kubeflannel.yml
-
-
-
------
-
-#### 2.10.3 dashboard启动失败（无法访问）
-
-#### 修改了 NodePort 后，Pod kubernetes-dashboard 起不来了。（环境：虚拟机）
+修改了 NodePort 后，Pod kubernetes-dashboard 起不来了。（环境：虚拟机）
 
 ```shell
 # 查看日志
@@ -462,18 +423,16 @@ kubectl logs -f -n kubernetes-dashboard kubernetes-dashboard-658485d5c7-f89v7
 
 ![image.png](K8S集群环境搭建(Docker作为容器).assets/1652075593643-5900409d-98b9-48ef-8eb8-b6160feb6b71.png)
 
-==解决方案==
+解决思路
 
 ```shell
-●
 1、将 dashboard 部署到 master上，因为 master 刚安装了网络组件
-●
 2、让 工作节点 也能访问 apiServer
 ```
 
-### 方案1
+方案1
 
-==先卸载原来的 dashboard==
+- 先卸载原来的 dashboard
 
 ```shell
 # 无法访问，查看 部署到 哪个 node 上了， 将 dashboard 部署到 master 上
@@ -502,14 +461,14 @@ kubectl get svc -A |grep kubernetes-dashboard
 
 
 
-#### 2.10.4 创建访问账号
+- 创建访问账号
 
 ```shell
 #创建访问账号，准备一个yaml文件
 vim dash-usr.yaml
 ```
 
-文件内容如下
+- 文件内容如下
 
 ```yaml
 apiVersion: v1
@@ -538,7 +497,7 @@ kubectl apply -f dash-usr.yaml
 
 
 
-#### 2.10.5 令牌访问
+- 令牌访问
 
 ```shell
 #获取访问令牌
@@ -547,17 +506,15 @@ kubectl -n kubernetes-dashboard get secret $(kubectl -n kubernetes-dashboard get
 
 ![image-20230407135656881](K8S集群环境搭建(Docker作为容器).assets/image-20230407135656881.png)
 
-==复制令牌,注意复制的时候不要复制到空格，最好把终端全屏来复制==
-
 ```tex
 eyJhbGciOiJSUzI1NiIsImtpZCI6IkZkbV91WkVqTnp3clZLd29JS1FYUWxURzZyd0FLcnpVQzBtRlRMTmpya0UifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJhZG1pbi11c2VyLXRva2VuLTVrbGtrIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImFkbWluLXVzZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJiNWVhYjQ2MS0xNjE1LTQ5ZTQtYTAzNC0wY2MxYWM1YTI5ODkiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZXJuZXRlcy1kYXNoYm9hcmQ6YWRtaW4tdXNlciJ9.eum4COcUzn6wt_vOpCUUEiNENzeGUTC_ZlKeB8d0IplFlZWrAav3RbqV5LMDRRIyyZ-7csJb3COhFEiCRtlkc9MM60od4IRMscNxv_tm11A32pmGn9eFERyaYjKUFBHZfF34jPcsjYqU50TDn6wykI_B6r9ZzvpJemR-wqF2y-GBvmz8q19D9q5zlhaE9gmmvksEx-D0ZyOeZo4tMdbD757OdTjgzlYhmTpfTs-Z8-sdKWnHGFCYbAPzrEgMgChcIjlyDle9-JaE1WCosGCA73xsBzXNnkvYC7YB_tagX4BhGDZEu4eyRNbgCAqO6of6QnvDXvlesd59IU-WMVE-7Q
 ```
 
-==将令牌复制到token处==
+- 将令牌复制到token处
 
 ![image-20230407140527932](K8S集群环境搭建(Docker作为容器).assets/image-20230407140527932.png)
 
-==登录成功==
+- 登录成功
 
 ![image-20230407140620636](K8S集群环境搭建(Docker作为容器).assets/image-20230407140620636.png)
 

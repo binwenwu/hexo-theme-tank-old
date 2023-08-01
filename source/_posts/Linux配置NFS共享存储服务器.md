@@ -4,13 +4,13 @@ date: 2023-04-03 20:10:50
 cover: https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true
 ---
 
-1. 安装 nfs-untils
+### 1. 安装 nfs-untils
 
 ```bash
 yum -y install nfs-utils
 ```
 
-2. 设置共享目录
+### 2. 设置共享目录
 
 ```bash
 mkdir -p /data/publicDisk001
@@ -23,7 +23,7 @@ vim /etc/exports
 /data/publicDisk001   10.0.0.0/24(rw,no_root_squash)
 ```
 
-3. 启动广播和nfs
+### 3. 启动广播和nfs
 
 ```bash
 systemctl start rpcbind
@@ -34,7 +34,7 @@ systemctl start nfs
 sudo service nfs-server start
 ```
 
-4. 在同一网段下，另一个主机也安装 nfs 作为客户端
+### 4. 在同一网段下，另一个主机也安装 nfs 作为客户端
 
 ```bash
 yum -y install nfs-utils
@@ -43,7 +43,7 @@ systemctl start nfs
 sudo service nfs-server start
 ```
 
-5. 挂载
+### 5. 挂载
 
 ```bash
 # 新建目录
@@ -53,7 +53,7 @@ mkdir -p /data/disk01
 mount -t nfs 10.0.0.204:/data/publicDisk001 /data/disk01
 ```
 
-6. 查看挂载情况
+### 6. 查看挂载情况
 
 ```bash
 df -h

@@ -4,35 +4,30 @@ date: 2023-03-14 16:59:05
 cover: https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true
 ---
 
-## 1、设置虚拟网关
+### 1、设置虚拟网关
 
-#### 点击导航栏上面的【编辑】-->【虚拟网络编辑器】，并以【管理员】的身份打开虚拟机。
+点击导航栏上面的【编辑】-->【虚拟网络编辑器】，并以【管理员】的身份打开虚拟机。
 
 ![img](VMware虚拟机设置静态IP.assets/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAY2hhb2ZlbmdkZXY=,size_20,color_FFFFFF,t_70,g_se,x_16.png)
 
-####  点击【VMnet8 NAT模式】，取消使用本地使用本地[dhcp](https://so.csdn.net/so/search?q=dhcp&spm=1001.2101.3001.7020)服务，配置网络段（子网ip段）为192.168.1.0，点击NAT设置。
+点击【VMnet8 NAT模式】，取消使用本地使用本地[dhcp](https://so.csdn.net/so/search?q=dhcp&spm=1001.2101.3001.7020)服务，配置网络段（子网ip段）为192.168.1.0，点击NAT设置。
 
 ![image-20230406140828304](VMware虚拟机设置静态IP.assets/image-20230406140828304.png)
 
-####  配置【网关ip】，注意【网关ip】需要在【子网ip】段下，这里设置为192.168.1.2
+配置【网关ip】，注意【网关ip】需要在【子网ip】段下，这里设置为192.168.1.2
 
 ![image-20230406140906021](VMware虚拟机设置静态IP.assets/image-20230406140906021.png)
 
 
+### 2、配置虚拟机静态ip
 
-------
-
-
-
-## 2、配置虚拟机静态ip
-
-####  打开命令行，输入
+打开命令行，输入
 
 ```shell
 vim /etc/sysconfig/network-scripts/ifcfg-ens33
 ```
 
-#### 并修改配置文件内容。
+并修改配置文件内容。
 
 ![image-20230406141120088](VMware虚拟机设置静态IP.assets/image-20230406141120088.png)
 
@@ -48,23 +43,18 @@ GATEWAY=192.168.1.2
 DNS1=114.114.114
 ```
 
-==注：DNS1是dns服务器，一般设置为114.114.114.114、114.114.115.115和8.8.8.8等（其他的也可以，只不过这几个用的人比较多而已）==
+注：DNS1是dns服务器，一般设置为114.114.114.114、114.114.115.115和8.8.8.8等(其他的也可以，只不过这几个用的人比较多而已)
 
 
+### 3、检测配置是否成功
 
-------
-
-
-
-## 3、检测配置是否成功
-
-- #### 重启网络服务
+- 重启网络服务
 
 ```shell
 service network restart
 ```
 
-- #### ping一下百度
+- ping一下百度
 
 ```shell
 ping www.baidu.com

@@ -4,13 +4,9 @@ date: 2023-05-11 9:20:52
 cover: https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true
 ---
 
-## 1.  安装Docker
+## 1  安装docker 20.10.7
 
-## 1.1  安装docker 20.10.7
-
-==注意 Docker 版本，要和 Kubernetes 版本 有对应关系==
-
-#### 三台机器上执行
+**注意 Docker 版本，要和 Kubernetes 版本 有对应关系**
 
 ```shell
 # 安装/更新 yum-utils
@@ -32,9 +28,7 @@ systemctl start docker
 docker version
 ```
 
-## 1.1  **配置加速镜像**
-
-#### 三台机器上执行
+## 2  配置加速镜像
 
 ```shell
 sudo mkdir -p /etc/docker

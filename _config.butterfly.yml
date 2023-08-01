@@ -163,7 +163,7 @@ copy:
 toc:
   post: true
   page: false
-  number: true
+  number: false
   expand: false
   style_simple: false # for post
   scroll_percent: true
@@ -179,12 +179,12 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-   - img: /img/wechat.jpg
+   - img: https://github.com/binwenwu/blog/blob/main/source/img/wechat.png?raw=true
      link:
-     text: wechat
-   - img: /img/alipay.jpg
+     text: 微信
+   - img: https://github.com/binwenwu/blog/blob/main/source/img/alipay.png?raw=true
      link:
-     text: alipay
+     text: 支付宝
 
 # Post edit
 # Easily browse and edit blog source code online.
