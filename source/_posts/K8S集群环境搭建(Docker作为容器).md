@@ -1,7 +1,8 @@
 ---
 title: K8S集群环境搭建(Docker作为容器)
+cover: 'https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true'
+abbrlink: d862c611
 date: 2023-05-18 14:08:12
-cover: https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true
 ---
 
 本文参考：https://zhuanlan.zhihu.com/p/558014199?utm_id=0

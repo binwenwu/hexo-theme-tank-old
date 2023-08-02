@@ -15,7 +15,10 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://binwenwu.github.io/
-permalink: :year/:month/:day/:title/
+permalink: archives/:abbrlink.html
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: hex    # 进制：dec(default) and hex
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -103,12 +106,43 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: 'git'
-  repo: 'git@github.com:binwenwu/binwenwu.github.io.git'
-  branch: 'main'
+  - type: 'git'
+    repo:
+      coding: 'https://KnTRSoUydw:2b6cbe2d15e493ffd47ab4e69ae8c5ef485f1ea9@e.coding.net/serverless-100032698854/blog/blog.git'
+      github: 'git@github.com:binwenwu/binwenwu.github.io.git'
+    branch: 'main'
+  - type: baidu_url_submitter
 
 search:
   path: search.xml
   field: post
   format: html
   limit: 10000
+
+# 站点地图
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
+
+# 主动推送百度，被百度收录
+baidu_url_submit:
+  count: 10 #提交最新的10个链接
+  host: https://binwenwu.github.io # 百度站长平台的注册域名
+  token: xUKyEnD2hV9MJuRO # 接口调用地址中的token字段
+  path: baidu_urls.txt # 保存最新链接的文件路径
+
+
+# 给非友情链接的出站链接添加「nofollow」标签，nofollow 标签是由谷歌领头创新的一个「反垃圾链接」的标签，并被百度、yahoo 等各大搜索引擎广泛支持，引用 nofollow 标签的目的是：用于指示搜索引擎不要追踪（即抓取）网页上的带有 nofollow 属性的任何出站链接，以减少垃圾链接的分散网站权重。
+#
+#
+#作者: ConstOwn
+#链接: https://blog.juanertu.com/archives/9013c8d8.html
+#来源: 你真是一个美好的人类
+#著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+nofollow:
+  enable: true
+  field: site
+  exclude:
+

@@ -1,7 +1,8 @@
 ---
 title: Docker安装配置
-date: 2023-05-11 9:20:52
-cover: https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true
+cover: 'https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true'
+abbrlink: b035bcd6
+date: 2023-05-11 09:20:52
 ---
 
 ## 1  安装docker 20.10.7

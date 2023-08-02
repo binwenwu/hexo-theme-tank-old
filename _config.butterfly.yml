@@ -615,9 +615,9 @@ google_adsense:
 
 site_verification:
 # - name: google-site-verification
-#   content: xxxxxx
-# - name: baidu-site-verification
-#   content: xxxxxxx
+#   content: 7dnjD_EWQm94cq6DM6QtTD_KJjtOVd2LtwvM8u_R2DM
+ - name: baidu-site-verification
+   content: codeva-ok3ly5jyG3
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
@@ -924,8 +924,8 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-  # - <link rel="stylesheet" href="/xxx.css">
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/constown/HexoCustomFile@0.0.4/dist/css/custom.min.css">
+#    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/constown/HexoCustomFile@0.0.4/dist/css/custom.min.css">
+    - <link rel="stylesheet" href="/css/style.css">
   bottom:
   # - <script src="xxxx"></script>
 

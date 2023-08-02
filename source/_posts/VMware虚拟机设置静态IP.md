@@ -1,7 +1,8 @@
 ---
 title: VMware虚拟机设置静态IP
+cover: 'https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true'
+abbrlink: f5fad029
 date: 2023-03-14 16:59:05
-cover: https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true
 ---
 
 ### 1、设置虚拟网关
