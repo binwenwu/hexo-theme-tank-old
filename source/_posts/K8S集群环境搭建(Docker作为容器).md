@@ -133,7 +133,7 @@ sysctl --system
 
 ### 2.3  安装K8S三大件
 
-==安装 kubelet、kebeadm、kubectl；注意版本 （1.20.9）==
+安装 kubelet、kebeadm、kubectl；注意版本 (1.20.9)
 
 - 三台机器上执行
 
@@ -193,7 +193,7 @@ chmod +x ./images.sh && ./images.sh
 
 - 使用`docker images` 查看
 
-![image-20230406144630834](K8S集群环境搭建(Docker作为容器).assets/image-20230406144630834.png)
+![image-20230406144630834](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230406144630834.png)
 
 
 
@@ -225,7 +225,7 @@ kubeadm init \
 
 - 出现这个即成功了
 
-![image-20230406145652752](K8S集群环境搭建(Docker作为容器).assets/image-20230406145652752.png)
+![image-20230406145652752](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230406145652752.png)
 
 
 
@@ -299,7 +299,7 @@ kubectl apply -f https://docs.projectcalico.org/v3.18/manifests/calico.yaml
 
 - 下载完成后生成calico.yaml
 
-![image-20230406150214816](K8S集群环境搭建(Docker作为容器).assets/image-20230406150214816.png)
+![image-20230406150214816](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230406150214816.png)
 
 
 - 或者安装flannel
@@ -330,7 +330,7 @@ kubeadm join k8s-master:6443 --token is7ewi.nznlk1wdhsaocmp1 \
 
 - 出现这个即成功
 
-![image-20230406153948047](K8S集群环境搭建(Docker作为容器).assets/image-20230406153948047.png)
+![image-20230406153948047](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230406153948047.png)
 
 
 
@@ -380,9 +380,9 @@ kubectl edit svc kubernetes-dashboard -n kubernetes-dashboard
 kubectl get svc -A |grep kubernetes-dashboard
 ```
 
-![image-20230406155958282](K8S集群环境搭建(Docker作为容器).assets/image-20230406155958282.png)
+![image-20230406155958282](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230406155958282.png)
 
-![image-20230406161329065](K8S集群环境搭建(Docker作为容器).assets/image-20230406161329065.png)
+![image-20230406161329065](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230406161329065.png)
 
 32499即为访问端口，以后只需要使用任一节点的ip+32499即可访问
 
@@ -421,7 +421,7 @@ kubectl apply -f recommended.yaml
 kubectl logs -f -n kubernetes-dashboard kubernetes-dashboard-658485d5c7-f89v7
 ```
 
-![image.png](K8S集群环境搭建(Docker作为容器).assets/1652075593643-5900409d-98b9-48ef-8eb8-b6160feb6b71.png)
+![image.png](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/1652075593643-5900409d-98b9-48ef-8eb8-b6160feb6b71.png)
 
 解决思路
 
@@ -439,15 +439,15 @@ kubectl logs -f -n kubernetes-dashboard kubernetes-dashboard-658485d5c7-f89v7
 kubectl get pods -A -o wide
 ```
 
-![image-20230407113313033](K8S集群环境搭建(Docker作为容器).assets/image-20230407113313033.png)
+![image-20230407113313033](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230407113313033.png)
 
 ```shell
 # 修改 recommended.yaml，添加下面
 ```
 
-![image.png](K8S集群环境搭建(Docker作为容器).assets/1652078359412-58130528-5fe9-407b-8be2-5b4ddcbad064.png)
+![image.png](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/1652078359412-58130528-5fe9-407b-8be2-5b4ddcbad064.png)
 
-![image.png](K8S集群环境搭建(Docker作为容器).assets/1652078430899-c1b3f50d-354e-495c-8d02-e5e5e1353d1c.png)
+![image.png](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/1652078430899-c1b3f50d-354e-495c-8d02-e5e5e1353d1c.png)
 
 ```shell
 # 重新安装 dashboard
@@ -504,7 +504,7 @@ kubectl apply -f dash-usr.yaml
 kubectl -n kubernetes-dashboard get secret $(kubectl -n kubernetes-dashboard get sa/admin-user -o jsonpath="{.secrets[0].name}") -o go-template="{{.data.token | base64decode}}"
 ```
 
-![image-20230407135656881](K8S集群环境搭建(Docker作为容器).assets/image-20230407135656881.png)
+![image-20230407135656881](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230407135656881.png)
 
 ```tex
 eyJhbGciOiJSUzI1NiIsImtpZCI6IkZkbV91WkVqTnp3clZLd29JS1FYUWxURzZyd0FLcnpVQzBtRlRMTmpya0UifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJhZG1pbi11c2VyLXRva2VuLTVrbGtrIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImFkbWluLXVzZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJiNWVhYjQ2MS0xNjE1LTQ5ZTQtYTAzNC0wY2MxYWM1YTI5ODkiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZXJuZXRlcy1kYXNoYm9hcmQ6YWRtaW4tdXNlciJ9.eum4COcUzn6wt_vOpCUUEiNENzeGUTC_ZlKeB8d0IplFlZWrAav3RbqV5LMDRRIyyZ-7csJb3COhFEiCRtlkc9MM60od4IRMscNxv_tm11A32pmGn9eFERyaYjKUFBHZfF34jPcsjYqU50TDn6wykI_B6r9ZzvpJemR-wqF2y-GBvmz8q19D9q5zlhaE9gmmvksEx-D0ZyOeZo4tMdbD757OdTjgzlYhmTpfTs-Z8-sdKWnHGFCYbAPzrEgMgChcIjlyDle9-JaE1WCosGCA73xsBzXNnkvYC7YB_tagX4BhGDZEu4eyRNbgCAqO6of6QnvDXvlesd59IU-WMVE-7Q
@@ -512,11 +512,11 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IkZkbV91WkVqTnp3clZLd29JS1FYUWxURzZyd0FLcnpVQzBtRlRM
 
 - 将令牌复制到token处
 
-![image-20230407140527932](K8S集群环境搭建(Docker作为容器).assets/image-20230407140527932.png)
+![image-20230407140527932](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230407140527932.png)
 
 - 登录成功
 
-![image-20230407140620636](K8S集群环境搭建(Docker作为容器).assets/image-20230407140620636.png)
+![image-20230407140620636](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230407140620636.png)
 
 
 

@@ -8,15 +8,15 @@ cover: https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true
 
 点击导航栏上面的【编辑】-->【虚拟网络编辑器】，并以【管理员】的身份打开虚拟机。
 
-![img](VMware虚拟机设置静态IP.assets/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAY2hhb2ZlbmdkZXY=,size_20,color_FFFFFF,t_70,g_se,x_16.png)
+![img](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/watermark%2Ctype_ZHJvaWRzYW5zZmFsbGJhY2s%2Cshadow_50%2Ctext_Q1NETiBAY2hhb2ZlbmdkZXY%3D%2Csize_20%2Ccolor_FFFFFF%2Ct_70%2Cg_se%2Cx_16.png)
 
 点击【VMnet8 NAT模式】，取消使用本地使用本地[dhcp](https://so.csdn.net/so/search?q=dhcp&spm=1001.2101.3001.7020)服务，配置网络段（子网ip段）为192.168.1.0，点击NAT设置。
 
-![image-20230406140828304](VMware虚拟机设置静态IP.assets/image-20230406140828304.png)
+![image-20230406140828304](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230406140828304.png)
 
 配置【网关ip】，注意【网关ip】需要在【子网ip】段下，这里设置为192.168.1.2
 
-![image-20230406140906021](VMware虚拟机设置静态IP.assets/image-20230406140906021.png)
+![image-20230406140906021](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230406140906021.png)
 
 
 ### 2、配置虚拟机静态ip
@@ -29,7 +29,7 @@ vim /etc/sysconfig/network-scripts/ifcfg-ens33
 
 并修改配置文件内容。
 
-![image-20230406141120088](VMware虚拟机设置静态IP.assets/image-20230406141120088.png)
+![image-20230406141120088](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230406141120088.png)
 
 
 
