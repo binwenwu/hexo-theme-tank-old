@@ -3,6 +3,7 @@ title: K8S集群环境搭建(Docker作为容器)
 cover: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/u%3D2075113303%2C1509195472%26fm%3D253%26fmt%3Dauto%26app%3D138%26f%3DJPG'
 abbrlink: d862c611
 date: 2023-05-18 14:08:12
+keywords: K8S, Docker
 ---
 
 本文参考：https://zhuanlan.zhihu.com/p/558014199?utm_id=0

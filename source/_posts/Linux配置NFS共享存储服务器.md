@@ -3,6 +3,7 @@ title: Linux配置NFS共享存储服务器
 cover: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/20190427172103385.png'
 abbrlink: d154fd87
 date: 2023-04-03 20:10:50
+keywords: Linux, NFS, 共享存储
 ---
 
 ### 1. 安装 nfs-untils
