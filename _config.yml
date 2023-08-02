@@ -108,7 +108,7 @@ theme: butterfly
 deploy:
   - type: 'git'
     repo:
-      github: 'git@github.com:binwenwu/binwenwu.github.io.git'
+      github: 'https://github.com/binwenwu/binwenwu.github.io.git'
     branch: 'main'
   - type: 'git'
     repo:

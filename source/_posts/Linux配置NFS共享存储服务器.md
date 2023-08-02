@@ -1,6 +1,6 @@
 ---
 title: Linux配置NFS共享存储服务器
-cover: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/20190427172103385.png'
+cover: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/2e5434c78c893c433d88c104b675d119.png'
 abbrlink: d154fd87
 date: 2023-04-03 20:10:50
 keywords: Linux, NFS, 共享存储
