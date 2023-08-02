@@ -1,6 +1,6 @@
 ---
 title: VMware虚拟机设置静态IP
-cover: 'https://github.com/binwenwu/blog/blob/main/source/img/bg01.jpg?raw=true'
+cover: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/u%3D975125445%2C2172945209%26fm%3D253%26fmt%3Dauto%26app%3D138%26f%3DJPEG'
 abbrlink: f5fad029
 date: 2023-03-14 16:59:05
 ---
