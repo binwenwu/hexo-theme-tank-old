@@ -1,3 +1,11 @@
+- class_name: 主题作者
+  class_desc: 也许这就是<span style="color:red">大佬</span>吧
+  link_list:
+    - name: JerryC
+      link: https://github.com/jerryc127
+      avatar: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/16351105
+      descr: 今日事,今日毕
+
 - class_name: 友情鏈接
   class_desc: 那些人，那些事
   link_list:
