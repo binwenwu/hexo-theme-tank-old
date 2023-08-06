@@ -4,6 +4,12 @@ cover: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/u%3D975125445%2C2172
 abbrlink: f5fad029
 date: 2023-03-14 16:59:05
 keywords: VMware, 虚拟机, 静态IP
+categories:
+  - Linux
+tags:
+  - VMware
+  - 虚拟机
+  - IP
 ---
 
 ### 1、设置虚拟网关

@@ -4,6 +4,11 @@ cover: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/2e5434c78c893c433d88
 abbrlink: d154fd87
 date: 2023-04-03 20:10:50
 keywords: Linux, NFS, 共享存储
+categories:
+  - Linux
+tags:
+  - Linux
+  - 存储
 ---
 
 ### 1. 安装 nfs-untils

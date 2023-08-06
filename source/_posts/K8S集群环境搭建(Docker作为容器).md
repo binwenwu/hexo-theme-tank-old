@@ -4,6 +4,12 @@ cover: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/u%3D2075113303%2C150
 abbrlink: d862c611
 date: 2023-05-18 14:08:12
 keywords: K8S, Docker
+categories:
+  - 云原生
+  - K8S
+tags:
+  - K8S
+  - Docker
 ---
 
 本文参考：https://zhuanlan.zhihu.com/p/558014199?utm_id=0

@@ -4,6 +4,12 @@ cover: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/u%3D2907334177%2C755
 abbrlink: b035bcd6
 date: 2023-05-11 09:20:52
 keywords: docker,安装,配置
+categories:
+  - 云原生
+  - Docker
+tags:
+  - 容器
+  - Docker
 ---
 
 ## 1  安装docker 20.10.7

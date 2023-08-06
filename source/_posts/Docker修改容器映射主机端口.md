@@ -4,6 +4,12 @@ cover: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/u%3D2188758126%2C186
 abbrlink: 9c5d9ac5
 date: 2023-05-12 15:26:51
 keywords: docker,端口
+categories:
+  - 云原生
+  - Docker
+tags:
+  - 容器
+  - Docker
 ---
 
 ### 1 对于已经存在的容器，更改端口
