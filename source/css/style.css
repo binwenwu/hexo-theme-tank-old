@@ -26,13 +26,14 @@
 }
 
 .layout_post > #post {
-    background: rgba(255, 255, 255, .8)
+    background: rgba(255, 255, 255, .8);
 }
 
 #aside_content .card-widget, #recent-posts > .recent-post-item, .layout_page > div:first-child:not(.recent-posts), .layout_post > #page, .layout_post > #post, .read-mode .layout_post > #post {
     background: rgba(255, 255, 255, .8)
 }
 
+/*鼠标样式*/
 body {
     cursor: url(https://cdn.jsdelivr.net/gh/constown/HexoCustomFile/public/cursors/default.cur), default
 }
@@ -40,6 +41,15 @@ body {
 a, img {
     cursor: url(https://cdn.jsdelivr.net/gh/constown/HexoCustomFile/public/cursors/pointer.cur), default
 }
+
+/* 鼠标样式 */
+/*body {*/
+/*    cursor: url("https://cdn.jsdelivr.net/gh/xlenco/JS-X@main/mouse/normal.cur"), default;*/
+/*}*/
+/*a,*/
+/*img {*/
+/*    cursor: url("https://cdn.jsdelivr.net/gh/xlenco/JS-X@main/mouse/link.cur"), default !important;*/
+/*}*/
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -74,3 +84,29 @@ a, img {
 .vsys {
     display: none !important
 }
+
+
+#recent-posts>.recent-post-item {
+    position: relative;
+}
+
+/* 最新文章图标 */
+.newPost-left,
+.newPost-right {
+    position: absolute;
+    top: 0;
+    color: white;
+    padding: 0 15px;
+    background-color: #49b1f5;
+    border-radius: 0 0 10px 10px;
+}
+
+.newPost-left {
+    left: 15px;
+}
+
+.newPost-right {
+    right: 15px;
+}
+
+

@@ -1,7 +1,7 @@
 ---
 title: K8S集群环境搭建(Containerd作为容器)
-cover: >-
-  https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/u%3D1569240043%2C1018440437%26fm%3D253%26fmt%3Dauto%26app%3D138%26f%3DJPEG
+cover: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/u%3D1569240043%2C1018440437%26fm%3D253%26fmt%3Dauto%26app%3D138%26f%3DJPEG
+top_img: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/08.jpg'
 keywords: 'K8S, Containerd'
 categories:
   - 云原生
@@ -11,6 +11,7 @@ tags:
   - Containerd
 abbrlink: 9d39de82
 date: 2023-08-06 15:08:12
+swiper_index: 1 #置顶轮播图顺序，非负整数，数字越大越靠前
 ---
 
 ## 1 前述

@@ -14,8 +14,8 @@ menu:
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
   链接||fas fa-solid fa-paperclip:
-    友情链接: /link/ || fas fa-solid fa-user-group
     收藏网址: /stars/ || fas fa-star
+    友情链接: /link/ || fas fa-solid fa-user-group
   关于||fas fa-solid fa-share:
     关于我: /about/ || fas fa-solid fa-user
 
@@ -253,7 +253,7 @@ aside:
     sort_order: # Don't modify the setting unless you know how it works
   card_categories:
     enable: true
-    limit: 8 # if set 0 will show all
+    limit: 0 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
   card_tags:
@@ -274,6 +274,9 @@ aside:
     enable: true
     post_count: true
     last_push_date: true
+    sort_order: # Don't modify the setting unless you know how it works
+  card_maps:
+    enable: true
     sort_order: # Don't modify the setting unless you know how it works
 
 # busuanzi count for PV / UV in site
@@ -656,7 +659,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background:
+background: '#FFFFFF'
 
 # Footer Background
 footer_bg: false
@@ -741,19 +744,19 @@ beautify:
   title-prefix-icon:  '\f0c1'
   title-prefix-icon-color:  '#F47466'
 
-# Global font settings
+# 全局字体设置
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
   global-font-size:
   code-font-size:
-  font-family:
-  code-font-family:
+  font-family: 'DFPKingGothicGB-Regular'
+  code-font-family: 'JetBrains Mono'
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
-  font_link:
-  font-family:
+  font_link: '/css/font-style.css'
+  font-family: 'doyu'
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
@@ -788,9 +791,15 @@ preloader:
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
-  source: 1
+  source: 3
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url:
+  pace_css_url: /css/icat_change.css
+  avatar: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/c933509f3fcc721e6f8e8612f7ec8725.jpeg
+
+
+
+
+
 
 # wordcount (字數統計)
 # see https://butterfly.js.org/posts/ceeb73f/#字數統計
@@ -851,7 +860,7 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: true
+  enable: false
   exclude:
   # - xxxx
   # - xxxx
@@ -923,8 +932,36 @@ inject:
   head:
 #    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/constown/HexoCustomFile@0.0.4/dist/css/custom.min.css">
     - <link rel="stylesheet" href="/css/style.css">
+    - <link rel="stylesheet" href="/css/font-style.css">
+    - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/mainColor/heoMainColor.css">
+    - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.css">
+    - <link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.9/tianli_gpt.css"> # Ai摘要 - 样式
+    - <link rel="stylesheet" href="/css/winbox.css"> # 博客背景切换-弹窗版
+    - <link rel="stylesheet" href="/css/fps.css"> # FPS
+
+
   bottom:
-  # - <script src="xxxx"></script>
+    - <script type="text/javascript" src="https://unpkg.zhimg.com/jquery@latest/dist/jquery.min.js"></script> # 引入jquery.min.js
+    - <script src="https://cdn.jsdelivr.net/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> #winbox
+    - <script async src="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.js"></script>
+    - <script async>let tianliGPT_postSelector = '\#post \#article-container';let tianliGPT_key = 'cb15e8574176e0a65dd7';</script>
+    - <script src="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.9/tianli_gpt.js"></script>  # Ai摘要 - 逻辑JS
+    - <script src="/js/fall_sakura.js" async></script> # 落樱背景
+    - <script src="/js/winbox.js" async></script> # 博客背景切换-弹窗版
+    - <script src="/js/fps.js" async></script> # FPS
+    - <div id="fps"></div> # FPS
+
+
+
+
+
+
+
+
+
+
+
+
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -1004,3 +1041,4 @@ CDN:
   # artalk_css:
   # busuanzi:
   # abcjs_basic_js:
+

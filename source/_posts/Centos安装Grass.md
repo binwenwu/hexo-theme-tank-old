@@ -1,16 +1,17 @@
 ---
 title: Centos安装Grass
-cover: >-
-  https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/u%3D4164252897%2C293158703%26fm%3D253%26fmt%3Dauto%26app%3D138%26f%3DJPEG
+cover: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/u%3D4164252897%2C293158703%26fm%3D253%26fmt%3Dauto%26app%3D138%26f%3DJPEG'
+top_img: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/08.jpg'
 keywords: 'grass,安装,centos'
 abbrlink: 4e1214ce
 date: 2023-08-03 22:04:51
 categories:
-  - 遥感/GIS
+  - GIS
 tags:
   - 遥感
   - GIS
   - 软件安装
+swiper_index: 3 #置顶轮播图顺序，非负整数，数字越大越靠前
 ---
 
 ## 1 方案一：通过EPEL源安装（Centos 8）

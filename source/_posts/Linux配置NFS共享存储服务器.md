@@ -1,6 +1,7 @@
 ---
 title: Linux配置NFS共享存储服务器
 cover: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/2e5434c78c893c433d88c104b675d119.png'
+top_img: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/08.jpg'
 abbrlink: d154fd87
 date: 2023-04-03 20:10:50
 keywords: Linux, NFS, 共享存储
@@ -9,6 +10,7 @@ categories:
 tags:
   - Linux
   - 存储
+swiper_index: 4 #置顶轮播图顺序，非负整数，数字越大越靠前
 ---
 
 ### 1. 安装 nfs-untils
@@ -19,7 +21,7 @@ yum -y install nfs-utils
 
 ### 2. 设置共享目录
 
-```bash
+```bash[categoryBar.pug](..%2F..%2Fnode_modules%2Fhexo-theme-butterfly%2Flayout%2Fincludes%2FcategoryBar.pug)
 mkdir -p /data/publicDisk001
 # 授权
 chmod 777 /data/publicDisk001/

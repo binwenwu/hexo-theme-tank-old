@@ -1,6 +1,7 @@
 ---
 title: Docker安装配置
-cover: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/u%3D2907334177%2C755581878%26fm%3D253%26fmt%3Dauto%26app%3D138%26f%3DJPEG'
+cover: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/_2fd6e0d9-e68c-499e-b062-5d9d9d46b34f.jfif'
+top_img: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/08.jpg'
 abbrlink: b035bcd6
 date: 2023-05-11 09:20:52
 keywords: docker,安装,配置
