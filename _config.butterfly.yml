@@ -58,7 +58,7 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/%E7%A7%8B%E5%A4%A9%E9%A3%8E%E6%99%AF%20%E6%A0%91%20%E7%8B%97%20%E8%90%BD%E5%8F%B6%20%E9%AB%98%E5%B1%B1%20%E5%94%AF%E7%BE%8E%E6%84%8F%E5%A2%83%E9%A3%8E%E6%99%AF4k%E5%A3%81%E7%BA%B8_%E5%BD%BC%E5%B2%B8%E5%9B%BE%E7%BD%91.jpg
+index_img: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/asaasddasdasa.jpg
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/%E7%A7%8B%E5%A4%A9%E9%A3%8E%E6%99%AF%20%E6%A0%91%20%E7%8B%97%20%E8%90%BD%E5%8F%B6%20%E9%AB%98%E5%B1%B1%20%E5%94%AF%E7%BE%8E%E6%84%8F%E5%A2%83%E9%A3%8E%E6%99%AF4k%E5%A3%81%E7%BA%B8_%E5%BD%BC%E5%B2%B8%E5%9B%BE%E7%BD%91.jpg
@@ -386,6 +386,7 @@ local_search:
   # Unescape html strings to the readable one.
   unescape: false
   CDN:
+
 
 
 # Docsearch
@@ -950,6 +951,9 @@ inject:
     - <script src="/js/winbox.js" async></script> # 博客背景切换-弹窗版
     - <script src="/js/fps.js" async></script> # FPS
     - <div id="fps"></div> # FPS
+    - <script defer src="/live2d-widget/autoload.js"></script> # 看板娘
+    - <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script> # 侧边分享按钮(复制链接)
+    - <script src="/js/share.js" async></script> # 侧边分享按钮(复制链接)
 
 
 

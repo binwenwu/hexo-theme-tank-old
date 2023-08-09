@@ -167,41 +167,9 @@ swiper:
   custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
 
 
-# hexo-magnet
-# 这个插件主要实现了以下功能：
-# 1. 自定义 tags 或 categories 的排列和展示
-# 2. 自定义 tags 或 categories 的展示图标，名称 3. 自定义排列的行数，默认 2 行
-magnet:
-  enable: true
-  priority: 1
-  enable_page: /
-  type: categories
-  devide: 3
-  display:
-    - name: Linux
-      display_name: 小斌のLinux
-      icon: 📚
-    - name: 云原生
-      display_name: 小斌の云原生
-      icon: 📒
-    - name: GIS
-      display_name: 小斌のGIS
-      icon: 🐱‍👓
-  color_setting:
-    text_color: black
-    text_hover_color: white
-    background_color: "#f2f2f2"
-    background_hover_color: "#b30070"
-  layout:
-    type: id
-    name: recent-posts
-    index: 0
-  temple_html: '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet">${temple_html_item}</div></div>'
-  plus_style: ""
 
-
-# tag-plugins-plus
-# see https://akilar.top/posts/615e2dec/
+# tag-plugins-plus 插件(使得在md中可以随意嵌入各种标签)
+# 可嵌入标签用法: https://akilar.top/posts/615e2dec/
 tag_plugins:
   enable: true # 开关
   priority: 5 #过滤器优先权
@@ -250,3 +218,36 @@ history_calendar:
     name: sticky_layout
     index: 0
   temple_html: '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>'
+
+
+# hexo-magnet
+# 这个插件主要实现了以下功能：
+# 1. 自定义 tags 或 categories 的排列和展示
+# 2. 自定义 tags 或 categories 的展示图标，名称 3. 自定义排列的行数，默认 2 行
+magnet:
+  enable: true
+  priority: 1
+  enable_page: /
+  type: categories
+  devide: 3
+  display:
+    - name: Linux
+      display_name: 小斌のLinux
+      icon: 📚
+    - name: 云原生
+      display_name: 小斌の云原生
+      icon: 📒
+    - name: GIS
+      display_name: 小斌のGIS
+      icon: 🐱‍👓
+  color_setting:
+    text_color: black
+    text_hover_color: white
+    background_color: "#f2f2f2"
+    background_hover_color: "#b30070"
+  layout:
+    type: id
+    name: recent-posts
+    index: 0
+  temple_html: '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet">${temple_html_item}</div></div>'
+  plus_style: ""
