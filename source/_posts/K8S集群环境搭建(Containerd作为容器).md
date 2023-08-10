@@ -206,18 +206,18 @@ kubectl uncordon NODENAME
 
 ## 2 K8S 集群基础环境部署
 
-<font color='red'>若服务器之前搭建过 K8S 集群，需要彻底删除</font>
+{% p red, 若服务器之前搭建过 K8S 集群，需要彻底删除 %}
 
-<font color='red'>参考</font>：https://blog.csdn.net/qq_43159578/article/details/124131709
+<span style="color:red">参考</span>：https://blog.csdn.net/qq_43159578/article/details/124131709 
 
-- 停止所有的 **Kubernetes** 服务
+- 停止所有的Kubernetes服务
 
 ```BASH
 sudo systemctl stop kubelet
 sudo systemctl stop containerd
 ```
 
-- 删除 **Kubernetes** 软件包
+- 删除Kubernetes软件包
 
 ```BASH
 yum remove kubeadm kubectl kubelet kubernetes-cni -y
@@ -232,7 +232,7 @@ rm -rf /etc/cni/net.d
 rm -rf /etc/kubernetes/*
 ```
 
-- 删除 **etcd** 数据目录
+- 删除etcd数据目录
 
 ```BASH
 rm -rf /var/lib/etcd
@@ -245,7 +245,7 @@ rm -rf /var/lib/etcd
 # sudo iptables -F && sudo iptables -t nat -F && sudo iptables -t mangle -F && sudo # # iptables -Xkubec
 ```
 
-<font color='red'>如果只是想重新部署集群</font>
+- <font color='red'>如果只是想重新部署集群</font>
 
 ```BASH
 kubeadm reset
@@ -290,7 +290,7 @@ kubeadm reset
 
 #### 2.2.1 前提条件
 
-a.    节点之中不可以有重复的主机名、MAC 地址或 product_uuid
+a.    节点之中不可以有重复的主机名、`MAC` 地址或 `product_uuid`
 
 ```BASH
 cat /sys/class/dmi/id/product_uuid
@@ -298,7 +298,7 @@ cat /sys/class/dmi/id/product_uuid
 
 b.    检查网络适配器：若有多个网卡，确保每个node的子网通过默认路由可达
 
-c.    防火墙开放端口-**Node**<font color='red'>(所有节点)</font>：
+c.    防火墙开放端口<font color='red'>(所有节点)</font>：
 
 ![image-20230415145138479](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230415145138479.png)
 
@@ -325,7 +325,7 @@ e.    关闭交换分区并禁用 SELinux<font color='red'>（所有节点）</f
 # 查看 交换分区
 free -m
 
-# 将 SELinux 设置为 permissive 模式（相当于将其禁用）  第一行是临时禁用，第二行是永久禁用
+# 将 `SELinux` 设置为 `permissive` 模式（相当于将其禁用）  第一行是临时禁用，第二行是永久禁用
 setenforce 0
 sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
 
@@ -493,7 +493,7 @@ sysctl --systemS
 - **Docker-engine+cir-dockerd方案（<font color='red'>舍弃</font>）**：从kubernetes 1.24开始，dockershim已经从kubelet中移除，但因为历史问题docker却不支持kubernetes主推的CRI（容器运行时接口）标准，需要在kubelet和docker之间加上一个中间层cri-docker。cri-docker是一个支持CRI标准的shim。一头通过CRI跟kubelet交互，另一头跟docker api交互，从而间接的实现了kubernetes以docker作为容器运行时。但是这种架构缺点也很明显，**调用链更长，效率更低**。因此选用containerd作为容器runtime
 - **containerd**方案: **containerd**是一个**docker**的容器**runtime**，成为**CNCF**的官方项目
 
-<font color='red'>官方安装教程</font>：https://github.com/containerd/containerd/blob/main/docs/getting-started.md
+官方安装教程：https://github.com/containerd/containerd/blob/main/docs/getting-started.md
 
 ```BASH
 # 安装containerd.io
@@ -544,6 +544,7 @@ systemctl enable containerd
 netstat -nlput | grep containerd
 tcp        0      0 127.0.0.1:36669         0.0.0.0:*               LISTEN      8665/containerd      off (0.00/0/0)
 ```
+
 
 #### 2.2.7 在所有电脑上安装 kubeadm, kubelet and kubectl<font color='red'>（所有节点）</font>
 
@@ -676,13 +677,14 @@ kubeadm join 125.220.153.23:6443 --token x0wdaj.d5wltdzdtos22fl6 --discovery-tok
 
 如果此步报如下错误
 
-<font color='red'>The connection to the server localhost:8080 was refused - did you specify the right host</font>
+<span style="color:red">The connection to the server localhost:8080 was refused - did you specify the right host</span>
 
-1. <font color='blue'>出现这个问题的原因是kubectl命令需要使用`kubernetes-admin`的身份来运行，在“`kubeadm int`”启动集群的步骤中就生成了“`/etc/kubernetes/admin.conf`”。</font>
-2. <font color='blue'>因此，解决方法如下，将主节点中的【`/etc/kubernetes/admin.conf`】文件拷贝到工作节点相同目录下：</font>
-3. <font color='blue'>然后分别在工作节点上配置环境变量：</font>
+1. <span style="color:blue">出现这个问题的原因是kubectl命令需要使用`kubernetes-admin`的身份来运行，在`kubeadm int`启动集群的步骤中就生成了`/etc/kubernetes/admin.conf`。</span>
+2. <span style="color:blue">因此，解决方法如下，将主节点中的`/etc/kubernetes/admin.conf`文件拷贝到工作节点相同目录下：</span>
+3. <span style="color:blue">然后分别在工作节点上配置环境变量：</span>
 
-解决方案
+
+{% p red, 解决方案 %}
 
 - 主节点执行
 
@@ -691,14 +693,14 @@ kubeadm join 125.220.153.23:6443 --token x0wdaj.d5wltdzdtos22fl6 --discovery-tok
 scp -P22 /etc/kubernetes/admin.conf oge@125.220.153.22:/etc/kubernetes/
 ```
 
-- node 节点执行如下命令后，再次执行加入集群的命令
+- `node` 节点执行如下命令后，再次执行加入集群的命令
 
 ```BASH
 echo "export KUBECONFIG=/etc/kubernetes/admin.conf" >> ~/.bash_profile
 source ~/.bash_profile
 ```
 
-如果是重新加入集群，需要reset一下
+- 如果是重新加入集群，需要 `reset` 一下
 
 ```BASH
 kubeadm reset
@@ -795,14 +797,15 @@ eyJhbGciOiJSUzI1NiIsImtpZCI6IkdVQTZzb3JEM1FHdkpxVDNsSEwtVEZWc2hyR08tbmFFWnFGX2Q2
 
 
 ## 4 安装K8S的包管理工具Helm <font color='red'>（管理节点）</font>
+<span style="color:red">参考</span>：https://helm.sh/docs/intro/install/ 
 
-<font color='red'>参考</font>：https://helm.sh/docs/intro/install/
 
 - 这里以下载压缩包安装为例：
 
-<font color='red'>参考</font>：https://www.cnblogs.com/zhanglianghhh/p/14165995.html
+<span style="color:red">参考</span>：https://www.cnblogs.com/zhanglianghhh/p/14165995.html
+<span style="color:red">github地址</span>：https://github.com/helm/helm
 
-<font color='red'>github地址</font>：https://github.com/helm/helm
+
 
 ![image-20230413112634363](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230413112634363.png)
 
@@ -815,9 +818,9 @@ mv ./linux-amd64/helm /usr/bin/
 helm version
 ```
 
-## 5 安装K8S的包管理工具 krew<font color='red'>（管理节点）</font>
+## 5 安装K8S的包管理工具 krew`（管理节点）`
+<span style="color:red">参考</span>：https://krew.sigs.k8s.io/docs/user-guide/setup/install/  
 
-<font color='red'>参考</font>：https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 
 - 确保 git 已经安装
 
@@ -870,6 +873,8 @@ kubectl krew version
 kubectl krew
 kubectl plugin list
 ```
+
+
 
 ## 6 为 K8S 创建 PV 持久卷
 
@@ -1072,7 +1077,7 @@ kubectl -n kubevirt wait kv kubevirt --for condition=Available
 
 - 安装 **CDI** 
 
-<font color='red'>参考</font>：https://kubevirt.io/labs/kubernetes/lab2.html
+<span style="color:red">参考</span>：https://kubevirt.io/labs/kubernetes/lab2.html
 
 - 安装 **VNC**
 
@@ -1199,9 +1204,9 @@ psql -h 125.220.153.23 -p 30865 -U postgres -W -f ./public.sql
 
 - 安装
 
-  - 注意：数据库安装需要持久卷，需提前创建满足要求的pv，或者创建nas的stroageclass，以自动根据postgresql的pvc创建pv。
+  - 注意：数据库安装需要持久卷，需提前创建满足要求的`pv`，或者创建`nas`的 `stroageclass`，以自动根据postgresql的pvc创建pv。
 
-  - 集群已经配置23服务器的/mnt/storage/k8s/pv为NAS,并已经配置名字为nas-storage的sc
+  - 集群已经配置23服务器的`/mnt/storage/k8s/pv`为 `NAS`,并已经配置名字为 `nas-storage` 的 `sc`
 
 
 ```BASH
@@ -1333,7 +1338,7 @@ kubectl exec -it -n ydy mongodb-644c657c4f-x62cn bash
 
 ### 12.1 <font color='black'>安装 spark-on-k8s-operator </font>
 
-<font color='red'>参考 </font>：https://blog.csdn.net/w8998036/article/details/122217230
+<span style="color:red">参考 </span>：https://blog.csdn.net/w8998036/article/details/122217230
 
 - 安装
 
@@ -1625,7 +1630,7 @@ iptables -t nat -A POSTROUTING -s 192.168.0.177/24 -o em1_2 -j MASQUERADE
 
 - [Kubernetes API Server cannot be started after improper reboot](https://github.com/kubernetes/kubernetes/issues/107491)
 
-- [K8s: etcd 集群备份灾难恢复操作手册](https://blog.51cto.com/liruilong/6060676)
+- [K8S: etcd 集群备份灾难恢复操作手册](https://blog.51cto.com/liruilong/6060676)
 
 
 

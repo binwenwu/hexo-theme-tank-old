@@ -46,7 +46,8 @@ pandoc -v
 ```
 
 ## 2 使用
-To see the output created by each of the commands below, click on the name of the output file:
+{% tip success %}To see the output created by each of the commands below, click on the name of the output file:
+{% endtip %}
 
 - HTML fragment
 ```BASH

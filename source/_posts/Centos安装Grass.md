@@ -296,7 +296,7 @@ yum install cairo-devel
 yum install freetype-devel
 ```
 
-- ........等等
+- ......
 
 
 
