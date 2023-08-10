@@ -1,8 +1,14 @@
 - class_name: 推荐博客
   flink_style: flexcard  #该参数可选值 flexcard 或者 butterfly 分别对应两种样式
   link_list:
-    - name: 安知鱼`Blog
+    - name: 安知鱼
       link: https://blog.anheyu.com/
       avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
       descr: 生活明朗，万物可爱
-      siteshot: https://npm.elemecdn.com/anzhiyu-theme-static@1.1.6/img/blog.anheyu.com.jpg
+      siteshot: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/anzhiy.cn.jpg
+
+    - name: 张洪Heo
+      link: https://blog.zhheo.com/
+      avatar: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/zhheo.png
+      descr: 分享设计与科技生活
+      siteshot: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/6311fc3959f82.webp

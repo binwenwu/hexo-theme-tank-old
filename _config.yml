@@ -232,14 +232,14 @@ magnet:
   devide: 3
   display:
     - name: Linux
-      display_name: 小斌のLinux
-      icon: 📚
+      display_name: 小吴のLinux
+      icon: ⚡
     - name: 云原生
-      display_name: 小斌の云原生
-      icon: 📒
+      display_name: 小吴の云原生
+      icon: ☁
     - name: GIS
-      display_name: 小斌のGIS
-      icon: 🐱‍👓
+      display_name: 小吴のGIS
+      icon: 🌎
   color_setting:
     text_color: black
     text_hover_color: white
