@@ -239,5 +239,5 @@ pandoc biblio.bib --citeproc --csl ieee.csl -s -o biblio.html
 ## 3 中文乱码问题
 
 中文乱码问题，大多与字体有关，解决方案详见文章
-{% link Linux 系统字体安装, https://binwenwu.github.io/archives/2de821dc.html, https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/20201027105140931.png %}
+{% link Linux 系统字体安装, https://my-bucket-uqm05wj-1319875991.cos-website.ap-guangzhou.myqcloud.com/archives/2de821dc.html, https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/20201027105140931.png %}
 

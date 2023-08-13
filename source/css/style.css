@@ -101,6 +101,7 @@ a, img {
     border-radius: 0 0 10px 10px;
 }
 
+
 .newPost-left {
     left: 15px;
 }
@@ -109,4 +110,14 @@ a, img {
     right: 15px;
 }
 
+
+/* (左侧内容区域 + 右侧边栏)的最大宽度 */
+.layout{
+    max-width: 1250px;
+}
+
+/* 左侧内容区域的宽度 */
+.layout > div:first-child {
+    width: 80%;
+}
 
