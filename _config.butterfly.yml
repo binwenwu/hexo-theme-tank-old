@@ -3,17 +3,18 @@
 # --------------------------------------
 
 nav:
-  logo: # logo 圖片地址
+  logo:
   display_title: true
   fixed: false # fixed navigation bar
 
 # Menu 目錄(导航菜单)
 menu:
   主页: / || fas fa-home
-  归档: /archives/ || fas fa-archive
-  标签: /tags/ || fas fa-tags
-  分类: /categories/ || fas fa-folder-open
-  链接||fas fa-solid fa-paperclip:
+  文章||fa-solid fa-book:
+    归档: /archives/ || fas fa-archive
+    标签: /tags/ || fas fa-tags
+    分类: /categories/ || fas fa-folder-open
+  我的||fas fa-solid fa-paperclip:
     收藏网址: /stars/ || fas fa-star
     友情链接: /link/ || fas fa-solid fa-user-group
   关于||fas fa-solid fa-share:
