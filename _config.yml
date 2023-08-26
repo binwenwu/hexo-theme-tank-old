@@ -14,8 +14,8 @@ email: 2390726421@qq.com
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-#url: https://binwenwu.github.io/
-url: https://my-bucket-uqm05wj-1319875991.cos-website.ap-guangzhou.myqcloud.com/
+url: https://binwenwu.github.io/
+#url: https://my-bucket-uqm05wj-1319875991.cos-website.ap-guangzhou.myqcloud.com/
 permalink: archives/:abbrlink.html
 abbrlink:
   alg: crc32  # 算法：crc16(default) and crc32
@@ -110,9 +110,11 @@ theme: butterfly
 deploy:
   - type: 'git'
     repo:
+      github: 'git@github.com:binwenwu/binwenwu.github.io.git'
       coding: 'https://KnTRSoUydw:2b6cbe2d15e493ffd47ab4e69ae8c5ef485f1ea9@e.coding.net/serverless-100032698854/blog/blog.git'
     branch: 'master'
   - type: baidu_url_submitter
+
 
 search:
   path: search.xml
