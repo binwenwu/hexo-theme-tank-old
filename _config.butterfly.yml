@@ -1,4 +1,4 @@
-# Navigation bar settings (導航欄設置)
+# Navigation bar settings (导航栏设置)
 # see https://butterfly.js.org/posts/4aa8abbe/##導航欄設置-Navigation-bar-settings
 # --------------------------------------
 
@@ -7,7 +7,7 @@ nav:
   display_title: true
   fixed: false # fixed navigation bar
 
-# Menu 目錄(导航菜单)
+# Menu 目录(导航菜单)
 menu:
   主页: / || fas fa-home
   文章||fa-solid fa-book:
@@ -101,7 +101,7 @@ cover:
 
 
 
-# Replace Broken Images (替換無法顯示的圖片)
+# Replace Broken Images (替换无法显示的图片)
 error_img:
   flink: /img/friend_404.gif
   post_page: /img/404.jpg
@@ -928,44 +928,60 @@ Open_Graph_meta:
 # Add the vendor prefixes to ensure compatibility
 css_prefix: true
 
+
+# envelope_comment
+# see https://akilar.top/posts/e2d3c450/
+envelope_comment:
+  enable: false #控制开关
+  custom_pic:
+    cover: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg #信笺头部图片
+    line: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png #信笺底部图片
+    beforeimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png # 信封前半部分
+    afterimg: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png # 信封后半部分
+  message: #信笺正文，多行文本，写法如下
+    - 有什么想问的？
+    - 有什么想说的？
+    - 有什么想吐槽的？
+    - 哪怕是有什么想吃的，都可以告诉我哦~
+  bottom: 自动书记人偶竭诚为您服务！ #仅支持单行文本
+  height: 1050px   #信封划出的高度
+  path: #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
+  front_matter: #【可选】comments页面的 front_matter 配置
+    title: 留言板
+    comments: true
+
+
+
+
+
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-#    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/constown/HexoCustomFile@0.0.4/dist/css/custom.min.css">
-    - <link rel="stylesheet" href="/css/style.css">
-    - <link rel="stylesheet" href="/css/font-style.css">
-    - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/mainColor/heoMainColor.css">
-    - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.css">
+    - <link rel="stylesheet" href="/css/style.css"> # 全局样式
+    - <link rel="stylesheet" href="/css/font-style.css"> # 字体
+    - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/mainColor/heoMainColor.css"> # 动态分类条
+    - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.css"> # 动态分类条
     - <link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.9/tianli_gpt.css"> # Ai摘要 - 样式
     - <link rel="stylesheet" href="/css/winbox.css"> # 博客背景切换-弹窗版
-    - <link rel="stylesheet" href="/css/fps.css"> # FPS
+    - <link rel="stylesheet" href="/css/fps.css"> # FPS 显示
 
 
   bottom:
-    - <script type="text/javascript" src="https://unpkg.zhimg.com/jquery@latest/dist/jquery.min.js"></script> # 引入jquery.min.js
+    - <script type="text/javascript" src="https://unpkg.zhimg.com/jquery@latest/dist/jquery.min.js"></script> # jquery.min.js
     - <script src="https://cdn.jsdelivr.net/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> #winbox
-    - <script async src="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.js"></script>
+    - <script async src="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/categoryBar/categoryBar.js"></script> # 动态分类条
     - <script async>let tianliGPT_postSelector = '\#post \#article-container';let tianliGPT_key = 'cb15e8574176e0a65dd7';</script>
     - <script src="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.9/tianli_gpt.js"></script>  # Ai摘要 - 逻辑JS
     - <script src="/js/fall_sakura.js" async></script> # 落樱背景
     - <script src="/js/winbox.js" async></script> # 博客背景切换-弹窗版
-    - <script src="/js/fps.js" async></script> # FPS
-    - <div id="fps"></div> # FPS
+    - <script src="/js/fps.js" async></script> # FPS 显示
+    - <div id="fps"></div> # FPS 显示
     - <script defer src="/live2d-widget/autoload.js"></script> # 看板娘
     - <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script> # 侧边分享按钮(复制链接)
     - <script src="/js/share.js" async></script> # 侧边分享按钮(复制链接)
-
-
-
-
-
-
-
-
-
-
+    - <script src="/js/tagsBarActive.js"></script> # 动态分类条
 
 
 
@@ -1048,4 +1064,6 @@ CDN:
   # artalk_css:
   # busuanzi:
   # abcjs_basic_js:
+
+
 

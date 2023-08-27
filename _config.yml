@@ -68,7 +68,7 @@ prismjs:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 18
   order_by: -date
 
 # Category & Tag
@@ -218,6 +218,12 @@ history_calendar:
   temple_html: '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>'
 
 
+# butterfly 主题文章双栏布局插件
+butterfly_article_double_row:
+  enable: true
+
+
+
 # hexo-magnet
 # 这个插件主要实现了以下功能：
 # 1. 自定义 tags 或 categories 的排列和展示
@@ -252,3 +258,6 @@ magnet:
     index: 0
   temple_html: '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet">${temple_html_item}</div></div>'
   plus_style: ""
+
+
+
