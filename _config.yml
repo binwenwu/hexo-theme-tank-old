@@ -146,24 +146,6 @@ nofollow:
   exclude:
 
 
-# 首页置顶轮播图
-# hexo-butterfly-swiper
-# see https://akilar.top/posts/8e1264d1/
-swiper:
-  enable: false # 开关
-  priority: 2 #过滤器优先权
-  enable_page: all # 应用页面
-  timemode: date #date/updated
-  layout: # 挂载容器类型
-    type: id
-    name: recent-posts
-    index: 0
-  default_descr: 再怎么看我也不知道怎么描述它的啦！
-  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
-  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
-  custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
-  custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
-
 
 
 # tag-plugins-plus 插件(使得在md中可以随意嵌入各种标签)
@@ -224,6 +206,25 @@ butterfly_article_double_row:
 
 
 
+# 首页置顶轮播图
+# hexo-butterfly-swiper
+# see https://akilar.top/posts/8e1264d1/
+swiper:
+  enable: false # 开关
+  priority: 2 #过滤器优先权,数字越小,越先渲染
+  enable_page: all # 应用页面
+  timemode: date #date/updated
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0  # 前提是layout.type为class，因为同一页面可能有多个class，此项用来确认究竟排在第几个顺位
+  default_descr: 再怎么看我也不知道怎么描述它的啦！
+  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
+  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
+  custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
+  custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
+
+
 # hexo-magnet
 # 这个插件主要实现了以下功能：
 # 1. 自定义 tags 或 categories 的排列和展示
@@ -258,6 +259,7 @@ magnet:
     index: 0
   temple_html: '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet">${temple_html_item}</div></div>'
   plus_style: ""
+
 
 
 

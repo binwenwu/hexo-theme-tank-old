@@ -425,7 +425,7 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: # Valine,Disqus
+  use: # 使用哪个评论框架
     - Livere
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
@@ -504,7 +504,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
+  envId: https://tankenqi.zeabur.app
   region:
   visitor: false
   option:
@@ -744,7 +744,7 @@ display_mode: light
 beautify:
   enable: true
   field: post # site/post
-  title-prefix-icon:  '\f0c1'
+  title-prefix-icon: '\f56b'   #'\f0c1'
   title-prefix-icon-color:  '#F47466'
 
 # 全局字体设置
@@ -929,6 +929,8 @@ Open_Graph_meta:
 css_prefix: true
 
 
+
+# 信笺样式留言板
 # envelope_comment
 # see https://akilar.top/posts/e2d3c450/
 envelope_comment:
@@ -966,6 +968,8 @@ inject:
     - <link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.9/tianli_gpt.css"> # Ai摘要 - 样式
     - <link rel="stylesheet" href="/css/winbox.css"> # 博客背景切换-弹窗版
     - <link rel="stylesheet" href="/css/fps.css"> # FPS 显示
+#    - <link rel="stylesheet" href="/css/twikoo.css"> # 评论区美化
+
 
 
   bottom:
@@ -982,6 +986,7 @@ inject:
     - <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script> # 侧边分享按钮(复制链接)
     - <script src="/js/share.js" async></script> # 侧边分享按钮(复制链接)
     - <script src="/js/tagsBarActive.js"></script> # 动态分类条
+#    - <script src="/js/twikoo.js"></script> # 评论区美化
 
 
 
