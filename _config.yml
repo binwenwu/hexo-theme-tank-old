@@ -205,6 +205,125 @@ butterfly_article_double_row:
   enable: true
 
 
+# 页脚美化(插件版)
+#hexo-butterfly-footer-marcus
+#see https://blog.marcus233.top/p/footer.html
+footer_beautify:
+  enable: true
+  priority: 5 #过滤器优先权
+  enable_page: all # 应用页面
+  layout: # 挂载容器类型
+    type: id
+    name: footer
+    index: 1
+  footer_icons:
+    enable: true
+    left:
+      - icon: fa-solid fa-compass
+        link: https://tankenqi.cn/
+        desrc: 个人主页
+        class: out
+      - icon: fa-brands fa-qq
+        link: https://res.abeim.cn/api/qq/?qq=2390726421
+        desrc: 联系QQ
+        class: out
+      - icon: fa-brands fa-weixin
+        link: /wechat/
+        desrc: 联系微信
+        class: in
+      - icon: fa-solid fa-envelope
+        link: mailto:2390726421@qq.com
+        desrc: 发送邮件
+        class: out
+    right:
+      - icon: fa-brands fa-github
+        link: https://github.com/binwenwu
+        desrc: Github主页
+        class: out
+      - icon: fa-brands fa-bilibili
+        link: https://space.bilibili.com/353113412
+        desrc: 哔哩哔哩主页
+        class: out
+      - icon: fa-solid fa-star
+        link: /stars/
+        desrc: 藏宝阁
+        class: in
+      - icon: fa-solid fa-comment
+        link: /message/
+        desrc: 留言
+        class: in
+  footer_logo:
+    enable: true
+    url: https://img01.anheyu.com/useruploads/8/2022/12/15/639adf5b8806a.png
+  footer_group:
+    enable: true
+    footer_group_link:
+      - group_title: 直达
+        footer_links:
+          - text: 藏宝阁
+            link: /stars/
+            class: in
+          - text: 友链订阅
+            link: /link/
+            class: in
+      - group_title: 关于
+        footer_links:
+          - text: 关于我
+            link: /about/
+            class: in
+      - group_title: 分类
+        footer_links:
+          - text: 博客相关
+            link: /categories/Linux
+            class: in
+          - text: 生活点滴
+            link: /categories/云原生
+            class: in
+          - text: 资源分享
+            link: /categories/GIS
+            class: in
+          - text: 学习笔记
+            link: /categories/前端开发
+            class: in
+  footer_friend_links:
+    enable: true
+    number: 5
+  footer_bottom:
+    copyright:
+      enable: true
+      author: Tankenqi
+      link: https://marcus233.top/
+      time: 2022
+    left:
+      - text: 雨云
+        desrc: 本站CDN支持
+        link: https://rainyun.com/
+      - text: 网盾星球
+        desrc: 本站CDN防护主要提供商:网盾星球
+        link: https://www.netdun.net/
+      - text: 萌ICP备20230221
+        desrc: 萌ICP备20230221
+        link: https://icp.gov.moe/?keyword=20230221
+      - text: 萌ICP备20236688
+        desrc: 萌ICP备20236688
+        link: https://icp.gov.moe/?keyword=20236688
+      - text: 萌ICP备20230002
+        desrc: 萌ICP备20230002
+        link: https://icp.gov.moe/?keyword=20230002
+    right:
+      - text: Hexo
+        desrc: 框架
+        link: https://hexo.io/zh-cn/
+      - text: Butterfly
+        desrc: 主题
+        link: https://butterfly.js.org/
+    runtime:
+      enable: true
+      time: 2022/08/09 00:00:00
+  footer_css: https://cdn1.tianli0.top/npm/hexo-butterfly-footer-marcus/lib/footer.min.css
+  footer_js:
+
+
 
 # 首页置顶轮播图
 # hexo-butterfly-swiper
