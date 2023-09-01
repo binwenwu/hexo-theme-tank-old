@@ -205,6 +205,29 @@ butterfly_article_double_row:
   enable: true
 
 
+
+
+
+
+# 首页置顶轮播图
+# hexo-butterfly-swiper
+# see https://akilar.top/posts/8e1264d1/
+swiper:
+  enable: false # 开关
+  priority: 2 #过滤器优先权,数字越小,越先渲染
+  enable_page: all # 应用页面
+  timemode: date #date/updated
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0  # 前提是layout.type为class，因为同一页面可能有多个class，此项用来确认究竟排在第几个顺位
+  default_descr: 再怎么看我也不知道怎么描述它的啦！
+  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
+  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
+  custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
+  custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
+
+
 # 页脚美化(插件版)
 #hexo-butterfly-footer-marcus
 #see https://blog.marcus233.top/p/footer.html
@@ -228,7 +251,7 @@ footer_beautify:
         desrc: 联系QQ
         class: out
       - icon: fa-brands fa-weixin
-        link: /wechat/
+        link: /404/
         desrc: 联系微信
         class: in
       - icon: fa-solid fa-envelope
@@ -249,7 +272,7 @@ footer_beautify:
         desrc: 藏宝阁
         class: in
       - icon: fa-solid fa-comment
-        link: /message/
+        link: /404/
         desrc: 留言
         class: in
   footer_logo:
@@ -273,16 +296,16 @@ footer_beautify:
             class: in
       - group_title: 分类
         footer_links:
-          - text: 博客相关
+          - text: Linux
             link: /categories/Linux
             class: in
-          - text: 生活点滴
+          - text: 云原生
             link: /categories/云原生
             class: in
-          - text: 资源分享
+          - text: GIS
             link: /categories/GIS
             class: in
-          - text: 学习笔记
+          - text: 前端开发
             link: /categories/前端开发
             class: in
   footer_friend_links:
@@ -292,8 +315,8 @@ footer_beautify:
     copyright:
       enable: true
       author: Tankenqi
-      link: https://marcus233.top/
-      time: 2022
+      link: https://tankenqi.cn/
+      time: 2023
     left:
       - text: 雨云
         desrc: 本站CDN支持
@@ -301,15 +324,9 @@ footer_beautify:
       - text: 网盾星球
         desrc: 本站CDN防护主要提供商:网盾星球
         link: https://www.netdun.net/
-      - text: 萌ICP备20230221
-        desrc: 萌ICP备20230221
-        link: https://icp.gov.moe/?keyword=20230221
-      - text: 萌ICP备20236688
-        desrc: 萌ICP备20236688
-        link: https://icp.gov.moe/?keyword=20236688
-      - text: 萌ICP备20230002
-        desrc: 萌ICP备20230002
-        link: https://icp.gov.moe/?keyword=20230002
+      - text: 萌ICP备20230346
+        desrc: 萌ICP备20230346
+        link: https://icp.gov.moe/?keyword=20230346
     right:
       - text: Hexo
         desrc: 框架
@@ -319,29 +336,9 @@ footer_beautify:
         link: https://butterfly.js.org/
     runtime:
       enable: true
-      time: 2022/08/09 00:00:00
+      time: 2023/03/01 00:00:00
   footer_css: https://cdn1.tianli0.top/npm/hexo-butterfly-footer-marcus/lib/footer.min.css
-  footer_js:
-
-
-
-# 首页置顶轮播图
-# hexo-butterfly-swiper
-# see https://akilar.top/posts/8e1264d1/
-swiper:
-  enable: false # 开关
-  priority: 2 #过滤器优先权,数字越小,越先渲染
-  enable_page: all # 应用页面
-  timemode: date #date/updated
-  layout: # 挂载容器类型
-    type: id
-    name: recent-posts
-    index: 0  # 前提是layout.type为class，因为同一页面可能有多个class，此项用来确认究竟排在第几个顺位
-  default_descr: 再怎么看我也不知道怎么描述它的啦！
-  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
-  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
-  custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
-  custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
+  footer_js: https://github.com/binwenwu/blog/blob/main/source/js/footer.min.js
 
 
 # hexo-magnet
