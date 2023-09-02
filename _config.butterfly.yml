@@ -43,7 +43,7 @@ code_word_wrap: false
 social:
  fab fa-github: https://github.com/binwenwu || Github || '#24292e'
  fas fa-envelope: mailto:binwenwu598@gmail.com || Gmail || '#4a7dbe'
- fa-brands fa-qq: mailto:2390726421@gq.com || QQ || '#24292e'
+ fa-brands fa-qq: https://res.abeim.cn/api/qq/?qq=2390726421 || QQ || '#24292e'
 # Image (圖片設置)
 # --------------------------------------
 
@@ -291,7 +291,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 3/1/2023 00:00:00
+  publish_date: 8/9/2022 00:00:00
   ##網頁開通時間
   #格式: 月/日/年 時間
   #也可以寫成 年/月/日 時間

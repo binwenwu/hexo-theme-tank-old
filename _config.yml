@@ -252,7 +252,7 @@ footer_beautify:
         class: out
       - icon: fa-brands fa-weixin
         link: /404/
-        desrc: 联系微信
+        desrc: 联系微信(待开发)
         class: in
       - icon: fa-solid fa-envelope
         link: mailto:2390726421@qq.com
@@ -273,7 +273,7 @@ footer_beautify:
         class: in
       - icon: fa-solid fa-comment
         link: /404/
-        desrc: 留言
+        desrc: 留言(待开发)
         class: in
   footer_logo:
     enable: true
@@ -338,7 +338,7 @@ footer_beautify:
       enable: true
       time: 2022/08/09 00:00:00
   footer_css: https://cdn1.tianli0.top/npm/hexo-butterfly-footer-marcus/lib/footer.min.css
-  footer_js: https://github.com/binwenwu/blog/blob/main/source/js/footer.min.js
+  footer_js: https://github.com/binwenwu/blog/blob/main/source/js/footer.min.js #https://cdn1.tianli0.top/npm/hexo-butterfly-footer-marcus/lib/footer.min.js  #https://github.com/binwenwu/blog/blob/main/source/js/footer.min.js
 
 
 # hexo-magnet
