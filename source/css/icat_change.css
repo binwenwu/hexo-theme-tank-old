@@ -1,3 +1,4 @@
+/* pace 加载的胶囊样式 */
 .pace {
     -webkit-pointer-events: none;
     pointer-events: none;
@@ -61,5 +62,82 @@
     }
 }
 
-/* pace 加载的胶囊样式 */
-。
+
+
+
+/* 波浪样式 */
+.main-hero-waves-area {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -11px;
+    z-index: 5;
+}
+.waves-area .waves-svg {
+    width: 100%;
+    height: 5rem;
+}
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+    fill: #f7f9febd;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+    fill: #f7f9fe82;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+    fill: #f7f9fe36;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+    fill: #f7f9fe;
+}
+
+[data-theme="dark"] .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+    fill: #070709c8;
+}
+[data-theme="dark"] .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+    fill: #07070980;
+}
+[data-theme="dark"] .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+    fill: #0707093e;
+}
+[data-theme="dark"] .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+    fill: #070709;
+}
+/* 黑色模式背景 */
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+@media (max-width: 768px) {
+    .waves-area .waves-svg {
+        height: 40px;
+        min-height: 40px;
+    }
+}
+
+
+

@@ -14,9 +14,12 @@ menu:
     归档: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
+    订阅: /subscribe/ || fas fa-solid fa-cloud
   我的||fas fa-solid fa-paperclip:
     收藏网址: /stars/ || fas fa-star
     友情链接: /link/ || fas fa-solid fa-user-group
+    文字瞬间: /records/ || fas fa-solid fa-heart
+    追番: /bilibili/ || iconfont icon-bilibili
   关于||fas fa-solid fa-share:
     关于我: /about/ || fas fa-solid fa-user
 
@@ -59,7 +62,7 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/intellij-2023.3-3840x2160.png
+index_img: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/%E6%B8%85%E6%96%B0%20%E8%93%9D%E5%A4%A9%E7%99%BD%E4%BA%91%20%E5%A4%A7%E6%B5%B7%20%E6%B5%B7%E6%B5%AA%20%E6%B2%99%E6%BB%A9%E9%A3%8E%E6%99%AF%20%E5%BD%BC%E5%B2%B8%E5%9B%BE%E7%BD%91%E5%8E%9F%E5%88%9B%204K%E9%A3%8E%E6%99%AF%E5%A3%81%E7%BA%B8_%E5%BD%BC%E5%B2%B8%E5%9B%BE%E7%BD%91.jpg #https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/intellij-2023.3-3840x2160.png
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/%E7%A7%8B%E5%A4%A9%E9%A3%8E%E6%99%AF%20%E6%A0%91%20%E7%8B%97%20%E8%90%BD%E5%8F%B6%20%E9%AB%98%E5%B1%B1%20%E5%94%AF%E7%BE%8E%E6%84%8F%E5%A2%83%E9%A3%8E%E6%99%AF4k%E5%A3%81%E7%BA%B8_%E5%BD%BC%E5%B2%B8%E5%9B%BE%E7%BD%91.jpg
@@ -219,7 +222,7 @@ noticeOutdate:
 footer:
   owner:
     enable: true
-    since: 2023
+    since: 2022
   custom_text:
   copyright: true # Copyright of theme and framework
 
@@ -426,7 +429,7 @@ comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   use: # 使用哪个评论框架
-    - Livere
+    - Twikoo
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -504,10 +507,12 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://tankenqi.zeabur.app
+  envId: https://twikoo-api-ochre-mu.vercel.app/    #https://tankenqi.zeabur.app
   region:
   visitor: false
   option:
+
+
 
 # Giscus
 # https://giscus.app/
@@ -971,9 +976,17 @@ inject:
     - <link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.9/tianli_gpt.css"> # Ai摘要 - 样式
     - <link rel="stylesheet" href="/css/winbox.css"> # 博客背景切换-弹窗版
     - <link rel="stylesheet" href="/css/fps.css"> # FPS 显示
-#    - <link rel="stylesheet" href="/css/twikoo.css"> # 评论区美化
+    - <link rel="stylesheet" href="/css/twikoo.css"> # 评论区输入提醒
     - <link rel="stylesheet" href="/css/rightmenu.css"> # 鼠标右键菜单
     - <link rel="stylesheet" href="/css/iconfont.css"> # 鼠标右键菜单 iconfont
+    - <style id="barragesColor"></style>  # 留言弹幕css容器
+    - <link rel="stylesheet" href="/css/commentBarrage.css"> # 留言弹幕样式
+    - <link rel="stylesheet" href="/css/records.css"> # 聊天记录页样式
+    - <link rel="stylesheet" href="/css/icat.css"> # 顶部banner样式
+    - <link rel="stylesheet" href="/css/icat_change.css"> # 顶部波浪
+    - <link rel="stylesheet" href="/css/color.css"> # 颜色
+    - <link rel="stylesheet" href="/css/subscribe.css"> # 订阅页样式
+
 
 
 
@@ -991,8 +1004,14 @@ inject:
     - <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script> # 侧边分享按钮(复制链接)
     - <script src="/js/share.js" async></script> # 侧边分享按钮(复制链接)
     - <script src="/js/tagsBarActive.js"></script> # 动态分类条
-#    - <script src="/js/twikoo.js"></script> # 评论区美化
+    - <script src="/js/twikoo.js"></script> # 评论区输入提醒
     - <script src="/js/rightmenu.js"></script> # 鼠标右键菜单
+    - <script type="text/javascript" src="/js/commentBarrage.js"></script> # 留言弹幕
+    - <script src="/js/lunar.js"></script> # 农历
+    - <script src="/js/day.js"></script> # 重要节日提醒
+    - <script type="text/javascript" src="https://npm.elemecdn.com/sweetalert2@8.19.0/dist/sweetalert2.all.js"></script>
+    - <script src="/zhheo/random.js"></script> # 随机文章
+    - <script src="/js/icat.js"></script>
 
 
 
@@ -1076,6 +1095,8 @@ CDN:
   # artalk_css:
   # busuanzi:
   # abcjs_basic_js:
+
+
 
 
 

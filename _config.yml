@@ -204,8 +204,15 @@ history_calendar:
 butterfly_article_double_row:
   enable: true
 
-
-
+# RSS订阅
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 20
+  hub:
+  content:
+  content_limit:
+  content_limit_delim: ' '
 
 
 
@@ -226,6 +233,20 @@ swiper:
   swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
   custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
   custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
+
+
+# 哔哩哔哩追番页面
+bangumi:
+  enable: true
+  path: bilibili/index.html
+  vmid: 353113412
+  title: 哔哩哔哩追番
+  quote:
+  show: 1
+  loading:
+  metaColor:
+  color:
+  webp:
 
 
 # 页脚美化(插件版)
@@ -289,6 +310,12 @@ footer_beautify:
           - text: 友链订阅
             link: /link/
             class: in
+          - text: 文字瞬间
+            link: /records/
+            class: in
+          - text: 文章订阅
+            link: /subscribe/
+            class: in
       - group_title: 关于
         footer_links:
           - text: 关于我
@@ -316,7 +343,7 @@ footer_beautify:
       enable: true
       author: Tankenqi
       link: https://tankenqi.cn/
-      time: 2023
+      time: 2022
     left:
       - text: 雨云
         desrc: 本站CDN支持
@@ -338,7 +365,7 @@ footer_beautify:
       enable: true
       time: 2022/08/09 00:00:00
   footer_css: https://cdn1.tianli0.top/npm/hexo-butterfly-footer-marcus/lib/footer.min.css
-  footer_js: https://github.com/binwenwu/blog/blob/main/source/js/footer.min.js #https://cdn1.tianli0.top/npm/hexo-butterfly-footer-marcus/lib/footer.min.js  #https://github.com/binwenwu/blog/blob/main/source/js/footer.min.js
+  footer_js: https://cdn1.tianli0.top/npm/hexo-butterfly-footer-marcus/lib/footer.min.js  #https://github.com/binwenwu/blog/blob/main/source/js/footer.js
 
 
 # hexo-magnet
@@ -375,6 +402,10 @@ magnet:
     index: 0
   temple_html: '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet">${temple_html_item}</div></div>'
   plus_style: ""
+
+
+
+
 
 
 

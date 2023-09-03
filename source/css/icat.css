@@ -1,0 +1,97 @@
+#page:has(#icat_page) {
+    border: 0;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+}
+#web_bg ~ .page:has(#icat_page) {
+    background: var(--card-bg);
+}
+/* page背景调整 */
+
+.icat-content.icat-content-item.icatPage {
+    height: 19rem;
+    color: #fff;
+    overflow: hidden;
+    margin-top: 0;
+    border-radius: 12px;
+    border: var(--style-border-always);
+    box-shadow: 0 8px 16px -4px #2c2d300c
+}
+.icat-content-item .icat-card-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+.icat-content-item .icat-content-item-tips {
+    opacity: .8;
+    font-size: .6rem;
+    margin-bottom: .5rem;
+}
+.icat-content-item .icat-card-content .icat-content-item-title {
+    margin-bottom: .5rem;
+}
+.icat-content-item .icat-content-item-title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+}
+.icat-content-item .icat-content-bottom {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icat-content-item .icat-content-bottom .icat-tips {
+    font-weight: bold;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.icat-content-item .icat-card-content .icat-change-button-group .icat-change-button {
+    height: 40px;
+    width: auto;
+    padding: 0 22px;
+    border-radius: 20px;
+    justify-content: center;
+    background: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transform: translateZ(0);
+    box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.2); !important
+}
+.icat-content-item .icat-card-content .icat-change-button-group .icat-change-button i {
+    margin-right: 4px;
+    font-weight: bold;
+}
+#page:has(#icat_page) .icat-content-item .icat-card-content .icat-change-button-group .icat-change-button:hover {
+    background: #3b70fc;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .icat-content-item .icat-card-content {
+        padding: 1rem 1rem;
+    }
+    .icat-content-item .icat-card-content .icat-change-button-group .icat-change-button {
+        width: 60px;
+    }
+    .icat-content-item .icat-card-content .icat-change-button-group .icat-change-button i {
+        margin-right: -3px;
+    }
+    .icat-content-item .icat-card-content .icat-change-button-group .icat-change-button-text {
+        display: none;
+    }
+}
+/* 响应式 */
+
+/* icat-page顶部样式 */
+

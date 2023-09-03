@@ -5,9 +5,9 @@
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
-    "deploy": "hexo clean && hexo generate && hexo d",
+    "deploy": "hexo clean && hexo bangumi -u && hexo generate && hexo d",
     "server": "hexo server",
-    "dev": "hexo clean && hexo generate && hexo server"
+    "dev": "hexo clean && hexo bangumi -u && hexo generate && hexo server"
   },
   "hexo": {
     "version": "6.3.0"
@@ -16,6 +16,7 @@
     "hexo": "^6.3.0",
     "hexo-abbrlink": "^2.2.1",
     "hexo-baidu-url-submit": "^0.0.6",
+    "hexo-bilibili-bangumi": "^1.8.8",
     "hexo-butterfly-article-double-row": "^1.0.2",
     "hexo-butterfly-clock-anzhiyu": "^1.1.8",
     "hexo-butterfly-envelope": "^1.0.15",
@@ -29,6 +30,7 @@
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-baidu-sitemap": "^0.1.9",
     "hexo-generator-category": "^2.0.0",
+    "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^3.0.0",
     "hexo-generator-search": "^2.4.3",
     "hexo-generator-sitemap": "^3.0.1",

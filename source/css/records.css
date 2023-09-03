@@ -1,0 +1,168 @@
+#icat-records {
+    padding-top: 12px;
+}
+.icat-records-self,
+.icat-records-the-other-side {
+    padding: 12px 2rem;
+    display: flex;
+    clear: both;
+}
+.icat-records-self {
+    float: right;
+}
+.icat-records-self img,
+.icat-records-the-other-side img {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+}
+/* 头像 */
+
+.icat-records-self-content {
+    background: var(--icat-self-content-background-color);
+    border-radius: 6px;
+    margin-right: -4px;
+    padding: 0px 16px;
+    margin-left: 66px;
+}
+.icat-records-the-other-side-content {
+    background: var(--icat-the-other-side-content-background-color);
+    border-radius: 6px;
+    margin-left: 1em;
+    padding: 0px 16px;
+    margin-right: 66px;
+}
+.icat-records-self-content p {
+    color: #000;
+}
+.icat-records-the-other-side-content p {
+    color: var(--icat-the-other-side-content-text-color);
+}
+/* 文字内容 */
+
+.icat-records-left-arrowhead {
+    position: absolute;
+    transform: rotate(90deg);
+    margin-left: 48px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 10px;
+    border-top: 8px solid var(--icat-the-other-side-content-background-color);
+}
+.icat-records-right-arrowhead {
+    transform: rotate(-90deg);
+    margin-right: -2px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 10px;
+    border-top: 8px solid var(--icat-self-content-background-color);
+}
+.icat-records-left-arrowhead,
+.icat-records-right-arrowhead {
+    width: 0;
+    height: 0;
+    margin-top: 16px;
+}
+/* 左右箭头 */
+
+.icat-records-chat-time {
+    display: flex;
+    padding-top: 10px;
+}
+.icat-records-chat-time span {
+    color: var(--icat-chat-time-text-color);
+    margin: 0 auto;
+    padding: 0 6px;
+    background-color: var(--icat-chat-time-background-color);
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 400;
+}
+/* 时间戳 */
+
+summary {
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #f3f3f3;
+    color: #000;
+    padding: 1rem;
+    margin-bottom: 4px;
+    outline: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    position: relative;
+}
+details {
+    clear: both;
+}
+details[open] summary~* {
+    animation: sweep .5s ease-in-out;
+}
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-top: -10px
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0px
+    }
+}
+details>summary::after {
+    position: absolute;
+    content: "+";
+    right: 20px;
+}
+
+details[open]>summary::after {
+    position: absolute;
+    content: "-";
+    right: 20px;
+}
+details>summary::-webkit-details-marker {
+    display: none;
+}
+/* 折叠栏 */
+
+@media screen and (max-width: 768px) {
+    .icat-records-self, .icat-records-the-other-side {
+        padding: 12px 4px;
+    }
+    .icat-records-self img, .icat-records-the-other-side img {
+        width: 45px;
+        height: 45px;
+    }
+    .icat-records-self-content p, .icat-records-the-other-side-content p {
+        font-size: 12px;
+    }
+    .icat-records-left-arrowhead {
+        margin-left: 43px;
+    }
+    .icat-records-self-content {
+        margin-left: 60px;
+    }
+    .icat-records-the-other-side-content {
+        margin-right: 60px;
+    }
+}
+/* 响应式 */
+
+[data-theme="light"] {
+    --icat-self-content-background-color: #95EC69;
+    --icat-the-other-side-content-background-color: rgba(237,237,237,0.2);
+    --icat-the-other-side-content-text-color: #000;
+    --icat-chat-time-background-color: rgba(44,44,44,0.02);
+    --icat-chat-time-text-color: #000;
+}
+[data-theme="dark"] {
+    --icat-self-content-background-color: #28B561;
+    --icat-the-other-side-content-background-color: #2C2C2C;
+    --icat-the-other-side-content-text-color: #FFF;
+    --icat-chat-time-background-color: rgba(255,255,255,0.12);
+    --icat-chat-time-text-color: #FFF;
+}
+/* 颜色变量 */
+
+/* 文字瞬间 - 聊天记录页 */
+
+
