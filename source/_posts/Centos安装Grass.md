@@ -1,28 +1,26 @@
 ---
-title: Centos安装Grass
-cover: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/u%3D3613172890%2C3047148242%26fm%3D253%26fmt%3Dauto%26app%3D138%26f%3DJPEG'
-top_img: 'https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/%E7%A7%8B%E5%A4%A9%E9%A3%8E%E6%99%AF%20%E6%A0%91%20%E7%8B%97%20%E8%90%BD%E5%8F%B6%20%E9%AB%98%E5%B1%B1%20%E5%94%AF%E7%BE%8E%E6%84%8F%E5%A2%83%E9%A3%8E%E6%99%AF4k%E5%A3%81%E7%BA%B8_%E5%BD%BC%E5%B2%B8%E5%9B%BE%E7%BD%91.jpg'
-keywords: 'grass,安装,centos'
 abbrlink: 4e1214ce
-date: 2023-08-03 22:04:51
 categories:
-  - GIS
+- GIS
+cover: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/u%3D3613172890%2C3047148242%26fm%3D253%26fmt%3Dauto%26app%3D138%26f%3DJPEG
+date: '2023-08-03T22:04:51+08:00'
+keywords: grass,安装,centos
+swiper_index: 3
 tags:
-  - 遥感
-  - GIS
-  - 软件安装
-swiper_index: 3 #置顶轮播图顺序，非负整数，数字越大越靠前
+- 遥感
+- GIS
+- 软件安装
+title: Centos安装Grass
+top_img: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/%E7%A7%8B%E5%A4%A9%E9%A3%8E%E6%99%AF%20%E6%A0%91%20%E7%8B%97%20%E8%90%BD%E5%8F%B6%20%E9%AB%98%E5%B1%B1%20%E5%94%AF%E7%BE%8E%E6%84%8F%E5%A2%83%E9%A3%8E%E6%99%AF4k%E5%A3%81%E7%BA%B8_%E5%BD%BC%E5%B2%B8%E5%9B%BE%E7%BD%91.jpg
+updated: 2023-9-3T14:59:29.426+8:0
 ---
-
-## 1 方案一：通过EPEL源安装（Centos 8）
+## 1 方案一：通过 EPEL 源安装（Centos 8）
 
 ### 1.1 安装 EPEL8 源
 
 链接：https://grass.osgeo.org/download/linux/#GRASS-GIS-current
 
 ![image-20230507202148758](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230507202148758.png)
-
-
 
 *安装 EPEL8 源步骤：参考链接：https://blog.csdn.net/Lcongming/article/details/115983236*
 
@@ -53,8 +51,6 @@ yum repolist
 
 ![image-20230507202627273](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230507202627273.png)
 
-
-
 ### 1.2 查看软件库中是否包含 GRASS
 
 ```BASH
@@ -62,8 +58,6 @@ yum search grass
 ```
 
 ![image-20230507202759087](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230507202759087.png)
-
-
 
 ### 1.3 安装 GRASS
 
@@ -214,16 +208,13 @@ Error: Package: wxGTK3-3.0.4-11.el8.x86_64 (EPEL)
            Requires: libpng16.so.16()(64bit)
 ```
 
-直接 yum 安装 grass 会存在依赖错误的问题，先看报错缺的是什么包，然后通过rpm的方式先把缺的包装好，所有缺的包安装完毕后，就可以通过yum install grass完成grass的安装，缺的包可以在这个网站上找：https://pkgs.org/ 
+直接 yum 安装 grass 会存在依赖错误的问题，先看报错缺的是什么包，然后通过rpm的方式先把缺的包装好，所有缺的包安装完毕后，就可以通过yum install grass完成grass的安装，缺的包可以在这个网站上找：https://pkgs.org/
 
 ![image-20230507203155606](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230507203155606.png)
-
- 
 
 - 假设缺的包是下面这个：
 
   ![image-20230507203400626](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230507203400626.png)
-
 - 点进去，查看这个包的下载地址：
 
 ![image-20230507203411137](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230507203411137.png)
@@ -239,14 +230,11 @@ rpm -Uvh https://vault.centos.org/centos/8/BaseOS/x86_64/os/Packages/glibc-2.28-
 
 - 参考资料：https://blog.csdn.net/fancy_xunbei/article/details/6268441
 
-
-
 ## 2 方案二：源码编译安装
 
 参考链接：https://www.zhihu.com/zvideo/1496911384683773952
 
 - 下载安装包
-
 - 解压并进入
 - 开始编译
 
@@ -298,10 +286,6 @@ yum install freetype-devel
 
 - ......
 
-
-
-
-
 ## 3 方案三： Docker镜像方式安装 (推荐)
 
 - grass docker 镜像：https://grass.osgeo.org/download/docker/
@@ -309,4 +293,3 @@ yum install freetype-devel
 ![image-20230508194802552](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230508194802552.png)
 
 - 创建容器
-
