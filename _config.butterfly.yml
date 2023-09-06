@@ -19,7 +19,7 @@ menu:
     收藏网址: /stars/ || fas fa-star
     友情链接: /link/ || fas fa-solid fa-user-group
     文字瞬间: /records/ || fas fa-solid fa-heart
-    追番: /bilibili/ || iconfont icon-bilibili
+    番剧广场: /bilibili/ || iconfont icon-bilibili
   关于||fas fa-solid fa-share:
     关于我: /about/ || fas fa-solid fa-user
 
@@ -47,13 +47,13 @@ social:
  fab fa-github: https://github.com/binwenwu || Github || '#24292e'
  fas fa-envelope: mailto:binwenwu598@gmail.com || Gmail || '#4a7dbe'
  fa-brands fa-qq: https://res.abeim.cn/api/qq/?qq=2390726421 || QQ || '#24292e'
-# Image (圖片設置)
+# Image (图片设置)
 # --------------------------------------
 
-# Favicon（網站圖標）
+# Favicon（网站图标）
 favicon: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/08-crocodile.svg
 
-# Avatar (頭像)
+# Avatar (头像)
 avatar:
   img: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/c933509f3fcc721e6f8e8612f7ec8725.jpeg
   effect: false
