@@ -329,7 +329,7 @@ kubectl apply -f https://github.com/flannel-io/flannel/releases/latest/download/
 
 
 
-### 2.7  **Worker 加入集群 ★**
+### 2.7  **Worker 加入集群**
 
 - worker节点加入到集群中（源自提示）
 

@@ -30,13 +30,13 @@ tags:
 
 ### 2、配置虚拟机静态ip
 
-打开命令行，输入
+- 打开命令行，输入
 
 ```shell
 vim /etc/sysconfig/network-scripts/ifcfg-ens33
 ```
 
-并修改配置文件内容。
+- 修改配置文件内容
 
 ![image-20230406141120088](https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/image-20230406141120088.png)
 
