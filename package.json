@@ -7,7 +7,8 @@
     "clean": "hexo clean",
     "deploy": "hexo clean && hexo bangumi -u && hexo generate && hexo d",
     "server": "hexo server",
-    "dev": "hexo clean && hexo bangumi -u && hexo generate && hexo server"
+    "dev": "hexo clean && hexo bangumi -u && hexo generate && hexo server",
+    "push": "git add . && git commit -m \"update\" && git push"
   },
   "hexo": {
     "version": "6.3.0"
