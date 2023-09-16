@@ -1,0 +1,229 @@
+#pagination .prev-post a,
+#pagination .next-post a {
+  z-index: 99;
+  display: flex !important;
+  overflow: hidden;
+  height: 150px;
+  position: fixed !important;
+  top: 45%;
+  background: rgba(0,0,0,0.45);
+  width: 65px;
+  font-size: 45px;
+  align-content: space-around;
+  color: #fff;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+#pagination .prev-post .prev-label,
+#pagination .next-post .next-label {
+  display: none;
+}
+#pagination .prev-post a {
+  left: 45px;
+}
+#pagination .next-post a {
+  right: 45px;
+}
+@media screen and (min-width: 768px) {
+  #pagination .pagination-card {
+    z-index: 99;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 150px;
+    width: 400px;
+    background: rgba(66,66,66,0.9);
+  }
+  #pagination .pagination-card img {
+    z-index: 100;
+    position: absolute;
+    width: 120px !important;
+    height: 120px !important;
+    top: 15px !important;
+    opacity: 0.9 !important;
+    border-radius: 50%;
+  }
+  #pagination .pagination-card .pagination-info {
+    position: absolute;
+    padding: 0 0 0 !important;
+    top: 0px;
+    width: calc(100% - 150px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    transform: unset !important;
+  }
+  #pagination .pagination-card .pagination-info .prev_info,
+  #pagination .pagination-card .pagination-info .next_info {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #pagination .pagination-card .pagination-info .label {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #pagination .pagination-card .pagination-info .label::before {
+    content: "";
+    width: 90%;
+    height: 2px;
+    top: 40%;
+    background: #fff;
+    position: absolute;
+  }
+  #pagination .prev-post .pagination-card {
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 75px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 75px;
+    border-bottom-right-radius: 10px;
+  }
+  #pagination .prev-post .pagination-card img {
+    left: 15px !important;
+  }
+  #pagination .prev-post .pagination-card .pagination-info {
+    left: 150px;
+  }
+  #pagination .next-post .pagination-card {
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 75px;
+  }
+  #pagination .next-post .pagination-card img {
+    right: 15px !important;
+  }
+  #pagination .next-post .pagination-card .pagination-info {
+    right: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #pagination .prev-post a {
+    height: 45px !important;
+    width: 100px;
+    top: 35%;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    left: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 22.5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 22.5px;
+  }
+  #pagination .prev-post a i::before {
+    content: "\f101";
+  }
+  #pagination .prev-post .prev-label {
+    display: inline-block;
+    font-size: 20px;
+    float: left;
+    margin-right: 5px;
+  }
+  #pagination .next-post a {
+    height: 45px !important;
+    width: 100px;
+    top: 35%;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    right: 0px;
+    border-top-left-radius: 22.5px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 22.5px;
+    border-bottom-right-radius: 0px;
+  }
+  #pagination .next-post a i::before {
+    content: "\f100";
+  }
+  #pagination .next-post .next-label {
+    display: inline-block;
+    font-size: 20px;
+    float: right;
+    margin-left: 5px;
+  }
+  #pagination .pagination-card {
+    z-index: 99;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 300px;
+    width: 90px;
+    background: rgba(66,66,66,0.9);
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  #pagination .pagination-card img {
+    z-index: 100;
+    position: absolute;
+    width: 70px !important;
+    height: 70px !important;
+    top: 10px !important;
+    opacity: 0.9 !important;
+    border-radius: 50%;
+  }
+  #pagination .pagination-card .pagination-info {
+    position: absolute;
+    padding: 0 0 0 !important;
+    top: 90px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    transform: unset !important;
+  }
+  #pagination .pagination-card .pagination-info .prev_info,
+  #pagination .pagination-card .pagination-info .next_info {
+    width: 60% !important;
+    height: 200px;
+    display: block;
+    writing-mode: vertical-rl;
+    text-align: center;
+  }
+  #pagination .pagination-card .pagination-info .label {
+    width: 40%;
+    writing-mode: vertical-rl;
+    text-align: start;
+  }
+  #pagination .pagination-card .pagination-info .label::before {
+    content: "";
+    width: 2px;
+    height: 180px;
+    background: #fff;
+    position: absolute;
+  }
+}
+[data-theme="dark"] #pagination .prev-post a,
+[data-theme="dark"] #pagination .next-post a {
+  background: rgba(255,255,255,0.3);
+  color: rgba(20,20,20,0.8);
+}
+#pagination .prev-post a:hover + .pagination-card,
+#pagination .next-post a:hover + .pagination-card {
+  display: flex;
+}
