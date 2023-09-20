@@ -111,7 +111,7 @@ deploy:
   - type: 'git'
     repo:
       github: 'git@github.com:binwenwu/binwenwu.github.io.git'
-#      coding: 'https://KnTRSoUydw:2b6cbe2d15e493ffd47ab4e69ae8c5ef485f1ea9@e.coding.net/serverless-100032698854/blog/blog.git'
+      coding: 'https://KnTRSoUydw:2b6cbe2d15e493ffd47ab4e69ae8c5ef485f1ea9@e.coding.net/serverless-100032698854/blog/blog.git'
     branch: 'master'
   - type: baidu_url_submitter
 

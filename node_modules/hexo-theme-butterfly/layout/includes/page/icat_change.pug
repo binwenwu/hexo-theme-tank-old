@@ -1,0 +1,21 @@
+- var pageBackground = 'background: url(' + page.top_bg + ') left 28% / cover no-repeat;'
+
+#icat_page
+  .icat-content.icat-content-item.icatPage.single(style=pageBackground)
+    .icat-card-content
+      .icat-content-item-tips= page.top_item || _p('Hallo iCat！')
+      span.icat-content-item-title= page.top_title || page.title || _p('MeuiCat')
+      .icat-content-bottom
+        .icat-tips= page.top_tips || page.description || _p('有肉有猫有生活.')
+
+        - if (typeof page.top_link !== 'undefined' && page.top_link && page.top_link.trim().length > 0)
+          if (page.top_link.startsWith('/'))
+            - var pageLink = '' + page.top_link + ''
+          else if (!page.top_link.startsWith('http') && !page.top_link.startsWith('https'))
+            - var pageLink = 'https://' + page.top_link + ''
+          else
+            - var pageLink = '' + page.top_link + ''
+          .icat-change-button-group
+            a.icat-change-button(href=pageLink)
+              i.iconfont.icat-go-right(style='font-size: .9rem')
+              span.icat-change-button-text= page.top_text || _p('关于本页')

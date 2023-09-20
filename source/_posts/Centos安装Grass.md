@@ -4,7 +4,7 @@ categories:
 - GIS
 cover: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/u%3D3613172890%2C3047148242%26fm%3D253%26fmt%3Dauto%26app%3D138%26f%3DJPEG
 date: '2023-08-03T22:04:51+08:00'
-keywords: grass,安装,centos,软件
+keywords: grass,安装,centos
 swiper_index: 3
 tags:
 - 遥感
