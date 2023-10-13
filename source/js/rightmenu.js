@@ -1,5 +1,19 @@
 //22.12.8 update：add mask
 //22.12.9 update: add search in this page
+
+//全屏
+function fullScreen() {
+    //全屏
+    var de = document.documentElement;
+    if (de.requestFullscreen) {
+        de.requestFullscreen();
+    } else if (de.mozRequestFullScreen) {
+        de.mozRequestFullScreen();
+    } else if (de.webkitRequestFullScreen) {
+        de.webkitRequestFullScreen();copyWordsLink
+    }
+}
+
 function setMask(){//设置遮罩层
     if(document.getElementsByClassName("rmMask")[0]!=undefined){
         return document.getElementsByClassName("rmMask")[0];
@@ -135,15 +149,21 @@ rmf.scrollToTop = function () {
 rmf.translate = function () {
     document.getElementById("translateLink").click();
 }
+// rmf.searchinThisPage=()=>{
+//     document.body.removeChild(mask);
+//     document.getElementsByClassName("local-search-box--input")[0].value=window.getSelection().toString()
+//     document.getElementsByClassName("search")[0].click()
+//     var evt = document.createEvent("HTMLEvents");evt.initEvent("input", false, false);document.getElementsByClassName("local-search-box--input")[0].dispatchEvent(evt);
+// }
 rmf.searchinThisPage=()=>{
-    document.body.removeChild(mask);
     document.getElementsByClassName("local-search-box--input")[0].value=window.getSelection().toString()
     document.getElementsByClassName("search")[0].click()
     var evt = document.createEvent("HTMLEvents");evt.initEvent("input", false, false);document.getElementsByClassName("local-search-box--input")[0].dispatchEvent(evt);
+    // try{document.body.removeChild(mask);}catch(err){}
 }
 document.body.addEventListener('touchmove', function(e){
-
 }, { passive: false });
+
 function popupMenu() {
     //window.oncontextmenu=function(){return false;}
     window.oncontextmenu = function (event) {

@@ -22,6 +22,7 @@ menu:
     番剧广场: /bilibili/ || iconfont icon-bilibili
   关于||fas fa-solid fa-share:
     关于我: /about/ || fas fa-solid fa-user
+    版权申明: /license/ || fas fa-solid fa-circle-info
 
 
 # 移动端隐藏侧边栏
@@ -51,11 +52,11 @@ social:
 # --------------------------------------
 
 # Favicon（网站图标）
-favicon: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/08-crocodile.svg
+favicon: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/meta.svg #https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/08-crocodile.svg
 
 # Avatar (头像)
 avatar:
-  img: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/c933509f3fcc721e6f8e8612f7ec8725.jpeg
+  img: https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/C7DA80A407F88DA86014A4DFFD087DC9.jpg #https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/c933509f3fcc721e6f8e8612f7ec8725.jpeg
   effect: false
 
 # 不显示顶部图
@@ -794,8 +795,9 @@ subtitle:
     - Never put off till tomorrow what you can do today
 
 # Loading Animation (加載動畫)
+# source: 1为满屏加载无pace胶囊,source: 2为pace胶囊无满屏动画, source: 3是两者都启用
 preloader:
-  enable: true
+  enable: false
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)

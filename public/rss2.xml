@@ -4,24 +4,158 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>TANKENQI</title>
-    <link>https://binwenwu.github.io/</link>
+    <link>https://www.tankenqi.cn/</link>
     
     <image>
       <url>https://www.gravatar.com/avatar/e72f077a2f71b2be255a3ec60b054acb</url>
       <title>TANKENQI</title>
-      <link>https://binwenwu.github.io/</link>
+      <link>https://www.tankenqi.cn/</link>
     </image>
     
-    <atom:link href="https://binwenwu.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://www.tankenqi.cn/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sat, 09 Sep 2023 07:53:00 GMT</pubDate>
+    <pubDate>Fri, 13 Oct 2023 03:50:35 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
+      <title>通过原始存储配置文件恢复数据库（简单粗暴）</title>
+      <link>https://www.tankenqi.cn/archives/add5de83.html</link>
+      <guid>https://www.tankenqi.cn/archives/add5de83.html</guid>
+      <pubDate>Thu, 12 Oct 2023 01:20:52 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description></description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://www.tankenqi.cn/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/">后端开发</category>
+      
+      <category domain="https://www.tankenqi.cn/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</category>
+      
+      
+      <category domain="https://www.tankenqi.cn/tags/%E5%AE%B9%E5%99%A8/">容器</category>
+      
+      <category domain="https://www.tankenqi.cn/tags/Docker/">Docker</category>
+      
+      <category domain="https://www.tankenqi.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</category>
+      
+      <category domain="https://www.tankenqi.cn/tags/%E5%90%8E%E7%AB%AF/">后端</category>
+      
+      
+      <comments>https://www.tankenqi.cn/archives/add5de83.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Microsoft Office下载及激活教程</title>
+      <link>https://www.tankenqi.cn/archives/499a3852.html</link>
+      <guid>https://www.tankenqi.cn/archives/499a3852.html</guid>
+      <pubDate>Wed, 11 Oct 2023 12:10:50 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description></description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://www.tankenqi.cn/categories/%E6%97%A5%E5%B8%B8%E5%8A%9E%E5%85%AC/">日常办公</category>
+      
+      
+      <category domain="https://www.tankenqi.cn/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/">软件安装</category>
+      
+      <category domain="https://www.tankenqi.cn/tags/Office/">Office</category>
+      
+      <category domain="https://www.tankenqi.cn/tags/Windows/">Windows</category>
+      
+      
+      <comments>https://www.tankenqi.cn/archives/499a3852.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Docker安装PostgreSQL并添加PostGIS拓展</title>
+      <link>https://www.tankenqi.cn/archives/e232bc22.html</link>
+      <guid>https://www.tankenqi.cn/archives/e232bc22.html</guid>
+      <pubDate>Mon, 09 Oct 2023 12:20:52 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description></description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://www.tankenqi.cn/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/">云原生</category>
+      
+      <category domain="https://www.tankenqi.cn/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/Docker/">Docker</category>
+      
+      
+      <category domain="https://www.tankenqi.cn/tags/%E5%AE%B9%E5%99%A8/">容器</category>
+      
+      <category domain="https://www.tankenqi.cn/tags/Docker/">Docker</category>
+      
+      <category domain="https://www.tankenqi.cn/tags/PostgreSQL/">PostgreSQL</category>
+      
+      <category domain="https://www.tankenqi.cn/tags/PostGIS/">PostGIS</category>
+      
+      <category domain="https://www.tankenqi.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</category>
+      
+      
+      <comments>https://www.tankenqi.cn/archives/e232bc22.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Docker镜像打包迁移</title>
+      <link>https://www.tankenqi.cn/archives/620cff7f.html</link>
+      <guid>https://www.tankenqi.cn/archives/620cff7f.html</guid>
+      <pubDate>Mon, 09 Oct 2023 01:20:52 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description></description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://www.tankenqi.cn/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/">云原生</category>
+      
+      <category domain="https://www.tankenqi.cn/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/Docker/">Docker</category>
+      
+      
+      <category domain="https://www.tankenqi.cn/tags/%E5%AE%B9%E5%99%A8/">容器</category>
+      
+      <category domain="https://www.tankenqi.cn/tags/Docker/">Docker</category>
+      
+      
+      <comments>https://www.tankenqi.cn/archives/620cff7f.html#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>武汉大学微软社招新2023笔试题</title>
-      <link>https://binwenwu.github.io/archives/33834cc9.html</link>
-      <guid>https://binwenwu.github.io/archives/33834cc9.html</guid>
+      <link>https://www.tankenqi.cn/archives/33834cc9.html</link>
+      <guid>https://www.tankenqi.cn/archives/33834cc9.html</guid>
       <pubDate>Sun, 13 Aug 2023 17:50:45 GMT</pubDate>
       
         
@@ -35,20 +169,20 @@
       
       
       
-      <category domain="https://binwenwu.github.io/categories/%E5%BE%AE%E8%BD%AF%E7%A4%BE/">微软社</category>
+      <category domain="https://www.tankenqi.cn/categories/%E5%BE%AE%E8%BD%AF%E7%A4%BE/">微软社</category>
       
       
-      <category domain="https://binwenwu.github.io/tags/%E5%BE%AE%E8%BD%AF%E7%A4%BE/">微软社</category>
+      <category domain="https://www.tankenqi.cn/tags/%E5%BE%AE%E8%BD%AF%E7%A4%BE/">微软社</category>
       
       
-      <comments>https://binwenwu.github.io/archives/33834cc9.html#disqus_thread</comments>
+      <comments>https://www.tankenqi.cn/archives/33834cc9.html#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Vue子组件中调用父组件中的方法</title>
-      <link>https://binwenwu.github.io/archives/aec1e412.html</link>
-      <guid>https://binwenwu.github.io/archives/aec1e412.html</guid>
+      <link>https://www.tankenqi.cn/archives/aec1e412.html</link>
+      <guid>https://www.tankenqi.cn/archives/aec1e412.html</guid>
       <pubDate>Sat, 12 Aug 2023 09:59:05 GMT</pubDate>
       
         
@@ -62,26 +196,26 @@
       
       
       
-      <category domain="https://binwenwu.github.io/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">前端开发</category>
+      <category domain="https://www.tankenqi.cn/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">前端开发</category>
       
-      <category domain="https://binwenwu.github.io/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/Vue/">Vue</category>
-      
-      
-      <category domain="https://binwenwu.github.io/tags/Vue/">Vue</category>
-      
-      <category domain="https://binwenwu.github.io/tags/%E5%89%8D%E7%AB%AF/">前端</category>
-      
-      <category domain="https://binwenwu.github.io/tags/%E7%BB%84%E4%BB%B6/">组件</category>
+      <category domain="https://www.tankenqi.cn/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/Vue/">Vue</category>
       
       
-      <comments>https://binwenwu.github.io/archives/aec1e412.html#disqus_thread</comments>
+      <category domain="https://www.tankenqi.cn/tags/Vue/">Vue</category>
+      
+      <category domain="https://www.tankenqi.cn/tags/%E5%89%8D%E7%AB%AF/">前端</category>
+      
+      <category domain="https://www.tankenqi.cn/tags/%E7%BB%84%E4%BB%B6/">组件</category>
+      
+      
+      <comments>https://www.tankenqi.cn/archives/aec1e412.html#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Linux 系统字体安装</title>
-      <link>https://binwenwu.github.io/archives/2de821dc.html</link>
-      <guid>https://binwenwu.github.io/archives/2de821dc.html</guid>
+      <link>https://www.tankenqi.cn/archives/2de821dc.html</link>
+      <guid>https://www.tankenqi.cn/archives/2de821dc.html</guid>
       <pubDate>Wed, 09 Aug 2023 11:48:15 GMT</pubDate>
       
         
@@ -95,22 +229,22 @@
       
       
       
-      <category domain="https://binwenwu.github.io/categories/Linux/">Linux</category>
+      <category domain="https://www.tankenqi.cn/categories/Linux/">Linux</category>
       
       
-      <category domain="https://binwenwu.github.io/tags/Linux/">Linux</category>
+      <category domain="https://www.tankenqi.cn/tags/Linux/">Linux</category>
       
-      <category domain="https://binwenwu.github.io/tags/%E5%AE%89%E8%A3%85/">安装</category>
+      <category domain="https://www.tankenqi.cn/tags/%E5%AE%89%E8%A3%85/">安装</category>
       
       
-      <comments>https://binwenwu.github.io/archives/2de821dc.html#disqus_thread</comments>
+      <comments>https://www.tankenqi.cn/archives/2de821dc.html#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Linux上Pandoc的使用</title>
-      <link>https://binwenwu.github.io/archives/557acb69.html</link>
-      <guid>https://binwenwu.github.io/archives/557acb69.html</guid>
+      <link>https://www.tankenqi.cn/archives/557acb69.html</link>
+      <guid>https://www.tankenqi.cn/archives/557acb69.html</guid>
       <pubDate>Wed, 09 Aug 2023 10:25:15 GMT</pubDate>
       
         
@@ -124,24 +258,24 @@
       
       
       
-      <category domain="https://binwenwu.github.io/categories/Linux/">Linux</category>
+      <category domain="https://www.tankenqi.cn/categories/Linux/">Linux</category>
       
       
-      <category domain="https://binwenwu.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/">软件安装</category>
+      <category domain="https://www.tankenqi.cn/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/">软件安装</category>
       
-      <category domain="https://binwenwu.github.io/tags/Linux/">Linux</category>
+      <category domain="https://www.tankenqi.cn/tags/Linux/">Linux</category>
       
-      <category domain="https://binwenwu.github.io/tags/Pandoc/">Pandoc</category>
+      <category domain="https://www.tankenqi.cn/tags/Pandoc/">Pandoc</category>
       
       
-      <comments>https://binwenwu.github.io/archives/557acb69.html#disqus_thread</comments>
+      <comments>https://www.tankenqi.cn/archives/557acb69.html#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>K8S集群环境搭建(Containerd作为容器)</title>
-      <link>https://binwenwu.github.io/archives/9d39de82.html</link>
-      <guid>https://binwenwu.github.io/archives/9d39de82.html</guid>
+      <link>https://www.tankenqi.cn/archives/9d39de82.html</link>
+      <guid>https://www.tankenqi.cn/archives/9d39de82.html</guid>
       <pubDate>Sun, 06 Aug 2023 07:08:12 GMT</pubDate>
       
         
@@ -155,24 +289,24 @@
       
       
       
-      <category domain="https://binwenwu.github.io/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/">云原生</category>
+      <category domain="https://www.tankenqi.cn/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/">云原生</category>
       
-      <category domain="https://binwenwu.github.io/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/K8S/">K8S</category>
-      
-      
-      <category domain="https://binwenwu.github.io/tags/K8S/">K8S</category>
-      
-      <category domain="https://binwenwu.github.io/tags/Containerd/">Containerd</category>
+      <category domain="https://www.tankenqi.cn/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/K8S/">K8S</category>
       
       
-      <comments>https://binwenwu.github.io/archives/9d39de82.html#disqus_thread</comments>
+      <category domain="https://www.tankenqi.cn/tags/K8S/">K8S</category>
+      
+      <category domain="https://www.tankenqi.cn/tags/Containerd/">Containerd</category>
+      
+      
+      <comments>https://www.tankenqi.cn/archives/9d39de82.html#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>VMware安装CentOS 7</title>
-      <link>https://binwenwu.github.io/archives/7ddf46fc.html</link>
-      <guid>https://binwenwu.github.io/archives/7ddf46fc.html</guid>
+      <link>https://www.tankenqi.cn/archives/7ddf46fc.html</link>
+      <guid>https://www.tankenqi.cn/archives/7ddf46fc.html</guid>
       <pubDate>Fri, 04 Aug 2023 08:59:05 GMT</pubDate>
       
         
@@ -186,24 +320,24 @@
       
       
       
-      <category domain="https://binwenwu.github.io/categories/Linux/">Linux</category>
+      <category domain="https://www.tankenqi.cn/categories/Linux/">Linux</category>
       
       
-      <category domain="https://binwenwu.github.io/tags/VMware/">VMware</category>
+      <category domain="https://www.tankenqi.cn/tags/VMware/">VMware</category>
       
-      <category domain="https://binwenwu.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/">虚拟机</category>
+      <category domain="https://www.tankenqi.cn/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/">虚拟机</category>
       
-      <category domain="https://binwenwu.github.io/tags/CentOS/">CentOS</category>
+      <category domain="https://www.tankenqi.cn/tags/CentOS/">CentOS</category>
       
       
-      <comments>https://binwenwu.github.io/archives/7ddf46fc.html#disqus_thread</comments>
+      <comments>https://www.tankenqi.cn/archives/7ddf46fc.html#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Centos安装Grass</title>
-      <link>https://binwenwu.github.io/archives/4e1214ce.html</link>
-      <guid>https://binwenwu.github.io/archives/4e1214ce.html</guid>
+      <link>https://www.tankenqi.cn/archives/4e1214ce.html</link>
+      <guid>https://www.tankenqi.cn/archives/4e1214ce.html</guid>
       <pubDate>Thu, 03 Aug 2023 14:04:51 GMT</pubDate>
       
         
@@ -217,24 +351,24 @@
       
       
       
-      <category domain="https://binwenwu.github.io/categories/GIS/">GIS</category>
+      <category domain="https://www.tankenqi.cn/categories/GIS/">GIS</category>
       
       
-      <category domain="https://binwenwu.github.io/tags/%E9%81%A5%E6%84%9F/">遥感</category>
+      <category domain="https://www.tankenqi.cn/tags/%E9%81%A5%E6%84%9F/">遥感</category>
       
-      <category domain="https://binwenwu.github.io/tags/GIS/">GIS</category>
+      <category domain="https://www.tankenqi.cn/tags/GIS/">GIS</category>
       
-      <category domain="https://binwenwu.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/">软件安装</category>
+      <category domain="https://www.tankenqi.cn/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/">软件安装</category>
       
       
-      <comments>https://binwenwu.github.io/archives/4e1214ce.html#disqus_thread</comments>
+      <comments>https://www.tankenqi.cn/archives/4e1214ce.html#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Linux安装Clash – 代理 – VPN</title>
-      <link>https://binwenwu.github.io/archives/438a2103.html</link>
-      <guid>https://binwenwu.github.io/archives/438a2103.html</guid>
+      <link>https://www.tankenqi.cn/archives/438a2103.html</link>
+      <guid>https://www.tankenqi.cn/archives/438a2103.html</guid>
       <pubDate>Tue, 01 Aug 2023 10:25:15 GMT</pubDate>
       
         
@@ -248,26 +382,26 @@
       
       
       
-      <category domain="https://binwenwu.github.io/categories/Linux/">Linux</category>
+      <category domain="https://www.tankenqi.cn/categories/Linux/">Linux</category>
       
       
-      <category domain="https://binwenwu.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/">软件安装</category>
+      <category domain="https://www.tankenqi.cn/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/">软件安装</category>
       
-      <category domain="https://binwenwu.github.io/tags/Linux/">Linux</category>
+      <category domain="https://www.tankenqi.cn/tags/Linux/">Linux</category>
       
-      <category domain="https://binwenwu.github.io/tags/Clash/">Clash</category>
+      <category domain="https://www.tankenqi.cn/tags/Clash/">Clash</category>
       
-      <category domain="https://binwenwu.github.io/tags/VPN/">VPN</category>
+      <category domain="https://www.tankenqi.cn/tags/VPN/">VPN</category>
       
       
-      <comments>https://binwenwu.github.io/archives/438a2103.html#disqus_thread</comments>
+      <comments>https://www.tankenqi.cn/archives/438a2103.html#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>本地启动前端打包的项目</title>
-      <link>https://binwenwu.github.io/archives/16380ff0.html</link>
-      <guid>https://binwenwu.github.io/archives/16380ff0.html</guid>
+      <link>https://www.tankenqi.cn/archives/16380ff0.html</link>
+      <guid>https://www.tankenqi.cn/archives/16380ff0.html</guid>
       <pubDate>Wed, 12 Jul 2023 09:59:05 GMT</pubDate>
       
         
@@ -281,22 +415,22 @@
       
       
       
-      <category domain="https://binwenwu.github.io/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">前端开发</category>
+      <category domain="https://www.tankenqi.cn/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/">前端开发</category>
       
       
-      <category domain="https://binwenwu.github.io/tags/%E5%89%8D%E7%AB%AF/">前端</category>
+      <category domain="https://www.tankenqi.cn/tags/%E5%89%8D%E7%AB%AF/">前端</category>
       
-      <category domain="https://binwenwu.github.io/tags/%E6%89%93%E5%8C%85/">打包</category>
+      <category domain="https://www.tankenqi.cn/tags/%E6%89%93%E5%8C%85/">打包</category>
       
       
-      <comments>https://binwenwu.github.io/archives/16380ff0.html#disqus_thread</comments>
+      <comments>https://www.tankenqi.cn/archives/16380ff0.html#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>K8S集群环境搭建(Docker作为容器)</title>
-      <link>https://binwenwu.github.io/archives/d862c611.html</link>
-      <guid>https://binwenwu.github.io/archives/d862c611.html</guid>
+      <link>https://www.tankenqi.cn/archives/d862c611.html</link>
+      <guid>https://www.tankenqi.cn/archives/d862c611.html</guid>
       <pubDate>Thu, 18 May 2023 06:08:12 GMT</pubDate>
       
         
@@ -310,24 +444,24 @@
       
       
       
-      <category domain="https://binwenwu.github.io/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/">云原生</category>
+      <category domain="https://www.tankenqi.cn/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/">云原生</category>
       
-      <category domain="https://binwenwu.github.io/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/K8S/">K8S</category>
-      
-      
-      <category domain="https://binwenwu.github.io/tags/Docker/">Docker</category>
-      
-      <category domain="https://binwenwu.github.io/tags/K8S/">K8S</category>
+      <category domain="https://www.tankenqi.cn/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/K8S/">K8S</category>
       
       
-      <comments>https://binwenwu.github.io/archives/d862c611.html#disqus_thread</comments>
+      <category domain="https://www.tankenqi.cn/tags/Docker/">Docker</category>
+      
+      <category domain="https://www.tankenqi.cn/tags/K8S/">K8S</category>
+      
+      
+      <comments>https://www.tankenqi.cn/archives/d862c611.html#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Docker修改容器映射主机端口</title>
-      <link>https://binwenwu.github.io/archives/9c5d9ac5.html</link>
-      <guid>https://binwenwu.github.io/archives/9c5d9ac5.html</guid>
+      <link>https://www.tankenqi.cn/archives/9c5d9ac5.html</link>
+      <guid>https://www.tankenqi.cn/archives/9c5d9ac5.html</guid>
       <pubDate>Fri, 12 May 2023 07:26:51 GMT</pubDate>
       
         
@@ -341,24 +475,24 @@
       
       
       
-      <category domain="https://binwenwu.github.io/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/">云原生</category>
+      <category domain="https://www.tankenqi.cn/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/">云原生</category>
       
-      <category domain="https://binwenwu.github.io/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/Docker/">Docker</category>
-      
-      
-      <category domain="https://binwenwu.github.io/tags/%E5%AE%B9%E5%99%A8/">容器</category>
-      
-      <category domain="https://binwenwu.github.io/tags/Docker/">Docker</category>
+      <category domain="https://www.tankenqi.cn/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/Docker/">Docker</category>
       
       
-      <comments>https://binwenwu.github.io/archives/9c5d9ac5.html#disqus_thread</comments>
+      <category domain="https://www.tankenqi.cn/tags/%E5%AE%B9%E5%99%A8/">容器</category>
+      
+      <category domain="https://www.tankenqi.cn/tags/Docker/">Docker</category>
+      
+      
+      <comments>https://www.tankenqi.cn/archives/9c5d9ac5.html#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Docker安装配置</title>
-      <link>https://binwenwu.github.io/archives/b035bcd6.html</link>
-      <guid>https://binwenwu.github.io/archives/b035bcd6.html</guid>
+      <link>https://www.tankenqi.cn/archives/b035bcd6.html</link>
+      <guid>https://www.tankenqi.cn/archives/b035bcd6.html</guid>
       <pubDate>Thu, 11 May 2023 01:20:52 GMT</pubDate>
       
         
@@ -372,24 +506,24 @@
       
       
       
-      <category domain="https://binwenwu.github.io/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/">云原生</category>
+      <category domain="https://www.tankenqi.cn/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/">云原生</category>
       
-      <category domain="https://binwenwu.github.io/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/Docker/">Docker</category>
-      
-      
-      <category domain="https://binwenwu.github.io/tags/%E5%AE%B9%E5%99%A8/">容器</category>
-      
-      <category domain="https://binwenwu.github.io/tags/Docker/">Docker</category>
+      <category domain="https://www.tankenqi.cn/categories/%E4%BA%91%E5%8E%9F%E7%94%9F/Docker/">Docker</category>
       
       
-      <comments>https://binwenwu.github.io/archives/b035bcd6.html#disqus_thread</comments>
+      <category domain="https://www.tankenqi.cn/tags/%E5%AE%B9%E5%99%A8/">容器</category>
+      
+      <category domain="https://www.tankenqi.cn/tags/Docker/">Docker</category>
+      
+      
+      <comments>https://www.tankenqi.cn/archives/b035bcd6.html#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Linux配置NFS共享存储服务器</title>
-      <link>https://binwenwu.github.io/archives/d154fd87.html</link>
-      <guid>https://binwenwu.github.io/archives/d154fd87.html</guid>
+      <link>https://www.tankenqi.cn/archives/d154fd87.html</link>
+      <guid>https://www.tankenqi.cn/archives/d154fd87.html</guid>
       <pubDate>Mon, 03 Apr 2023 12:10:50 GMT</pubDate>
       
         
@@ -403,22 +537,22 @@
       
       
       
-      <category domain="https://binwenwu.github.io/categories/Linux/">Linux</category>
+      <category domain="https://www.tankenqi.cn/categories/Linux/">Linux</category>
       
       
-      <category domain="https://binwenwu.github.io/tags/Linux/">Linux</category>
+      <category domain="https://www.tankenqi.cn/tags/Linux/">Linux</category>
       
-      <category domain="https://binwenwu.github.io/tags/%E5%AD%98%E5%82%A8/">存储</category>
+      <category domain="https://www.tankenqi.cn/tags/%E5%AD%98%E5%82%A8/">存储</category>
       
       
-      <comments>https://binwenwu.github.io/archives/d154fd87.html#disqus_thread</comments>
+      <comments>https://www.tankenqi.cn/archives/d154fd87.html#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>VMware虚拟机设置静态IP</title>
-      <link>https://binwenwu.github.io/archives/f5fad029.html</link>
-      <guid>https://binwenwu.github.io/archives/f5fad029.html</guid>
+      <link>https://www.tankenqi.cn/archives/f5fad029.html</link>
+      <guid>https://www.tankenqi.cn/archives/f5fad029.html</guid>
       <pubDate>Tue, 14 Mar 2023 08:59:05 GMT</pubDate>
       
         
@@ -432,17 +566,17 @@
       
       
       
-      <category domain="https://binwenwu.github.io/categories/Linux/">Linux</category>
+      <category domain="https://www.tankenqi.cn/categories/Linux/">Linux</category>
       
       
-      <category domain="https://binwenwu.github.io/tags/VMware/">VMware</category>
+      <category domain="https://www.tankenqi.cn/tags/VMware/">VMware</category>
       
-      <category domain="https://binwenwu.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/">虚拟机</category>
+      <category domain="https://www.tankenqi.cn/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/">虚拟机</category>
       
-      <category domain="https://binwenwu.github.io/tags/IP/">IP</category>
+      <category domain="https://www.tankenqi.cn/tags/IP/">IP</category>
       
       
-      <comments>https://binwenwu.github.io/archives/f5fad029.html#disqus_thread</comments>
+      <comments>https://www.tankenqi.cn/archives/f5fad029.html#disqus_thread</comments>
       
     </item>
     
