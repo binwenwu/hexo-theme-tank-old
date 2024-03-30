@@ -1,45 +1,20 @@
-# First version of hexo theme TanK source code (deprecated)
+<div align="center"> <a href="http://www.tankenqi.cn"> <img alt="Tankenqi Logo" width="200" height="200" src="https://cdn.jsdelivr.net/gh/binwenwu/picgo_demo/img/meta.png"> </a> <br> <br>
 
-```TEXT
-blog_V1.0
-├─.DS_Store
-├─.gitignore
-├─README.md
-├─_config.butterfly.yml
-├─_config.landscape.yml
-├─_config.yml
-├─blog - 快捷方式.lnk
-├─db.json
-├─package-lock.json
-├─package.json
-├─themes
-|   └.gitkeep
-├─source
-|   ├─.DS_Store
-|   ├─link.json
-|   ├─robots.txt
-|   ├─tags
-|   ├─subscribe
-|   ├─stars
-|   ├─records
-|   ├─link
-|   ├─license
-|   ├─js
-|   ├─img
-|   ├─css
-|   ├─categories
-|   ├─bilibili
-|   ├─about
-|   ├─_posts
-|   ├─_data
-|   |   ├─.DS_Store
-|   |   ├─bangumis.json
-|   |   ├─link.yml
-|   |   ├─records.yml
-|   |   └widget.yml
-├─scaffolds
-|     ├─draft.md
-|     ├─page.md
-|     └post.md
-├─public
-```
+[![license](https://img.shields.io/github/license/anncwb/vue-vben-admin.svg)](LICENSE)
+
+<h1>Hexo-theme-TanK</h1>
+</div>
+
+### Hexo-theme-TanK has been updated to V2.0, please go to [new repository](https://github.com/binwenwu/blog_V2.0)
+
+### Maintainer
+
+[@Binwen Wu](https://github.com/binwenwu)
+
+## Thanks
+
+<img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo." height="120">
+
+## License
+
+[MIT © Tankenqi-2023](./LICENSE)
