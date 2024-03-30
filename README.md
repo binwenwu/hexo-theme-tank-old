@@ -1,4 +1,4 @@
-# 第一版 hexo-blog 源码（已弃用）
+# First version of hexo theme TanK source code (deprecated)
 
 ```TEXT
 blog_V1.0
